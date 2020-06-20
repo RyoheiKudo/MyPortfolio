@@ -1,6 +1,6 @@
 (
-  function() {
-  
+  function () {
+
     "use strict";
 
     function drawChart() {
@@ -8,7 +8,7 @@
       var target = document.getElementById("charts")
       var data;
       var options = {
-        
+
         title: 'My Chart',
         width: 500,
         height: 300
@@ -29,8 +29,8 @@
 
 
     };
-    
-    google.charts.load('current', {packages: ['corechart']});
+
+    google.charts.load('current', { packages: ['corechart'] });
     google.charts.setOnLoadCallback(drawChart);
   }
 )

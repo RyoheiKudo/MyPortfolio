@@ -1,8 +1,5 @@
-
-
-
 class vec {
- constructor(x = 0, y = )
+  constructor(x = 0, y = 0)
 
 
 
