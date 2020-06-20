@@ -1,0 +1,33 @@
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  cursor: pointer;
+  transition: 0.8s;
+  margin: 0 8px 8px 0;
+  text-align: center;
+  line-height: 100px;
+}
+
+/* .circle{
+  border-radius: 50%;
+  background-color: pink;
+  transform: rotate(360deg);
+} */
+
+.win{
+  border-radius: 50%;
+  background-color: pink;
+  transform: rotate(360deg);
+}
+
+.lose{
+  transform: scale(0.9);
+}
+
+
+.randombox{
+  display: flex;
+  flex-wrap: wrap;
+}
+
