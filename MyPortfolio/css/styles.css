@@ -98,10 +98,11 @@ header{
   display: flex;
 }
 
-.works{
-  flex: 1;
+.learning{
+  margin-left:10px;
 }
 
-.learning{
-  flex: 1;
+.works{
+  flex: 10;
+  text-align: center;
 }
