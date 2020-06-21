@@ -1,27 +1,54 @@
 "use strict";
+{
 
-const num = 5;
+  const submit = document.getElementById("randomboxbtm");
 
-const winner = Math.floor(Math.random() * num);
+  submit.addEventListener("click", () => {
 
-for (let i = 0; i < num; i++) {
+    const arr = [];
+    const randomnumber = document.getElementsByName("randomnumber");
 
-  const div = document.createElement('div');
+    for (let i = 0; i < randomnumber.length; i++) {
 
-  div.classList.add("box");
+      if (randomnumber[i].checked) {  //(color2[i].checked === true)と同じ
+        arr.push(randomnumber[i].value);
+      }
 
-  div.addEventListener('click', () => {
+    }
 
-    if (i === winner) {
-      div.textContent = "Win!";
-      div.classList.add('win');
-    } else {
-      div.textContent = "Lose!";
-      div.classList.add('lose');
-    };
+    const num = arr;
 
-  });
+    // Math.floorで少数点をなくす、0 =< Math.random() =< 1 より、0 =< Math.random() * num =< 5、
+    // よってwinnerのとりうる値は1,2,3,4,5
+    const winner = Math.floor(Math.random() * num);
 
-  document.body.appendChild(div);
+    // for (let i = 0; i < num; i++) iが0からnumになるまで++足し続ける(0が一番目)
+    for (let i = 0; i < num; i++) {
 
-};
+      // ("要素")を作成することをdivとする
+      const randombox = document.getElementById("randombox");
+
+      const div = document.createElement("div");
+
+      randombox.appendChild(div);
+
+      // 要素divを作成して、クラスにBoxを追加
+      div.classList.add("box");
+
+      // 要素divを作成して、イベントを作成
+      div.addEventListener('click', () => {
+
+        if (i === winner) {
+          div.textContent = "Win!";
+          div.classList.add('win');
+          alert("あなたの勝利です！！!");
+        } else {
+          div.textContent = "Lose!";
+          div.classList.add('lose');
+        }
+
+      })
+
+    }
+  })
+}
