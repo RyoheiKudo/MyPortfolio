@@ -12,7 +12,7 @@
     background-color: rgb(181, 241, 181);
     /* リストの黒点消す */
     list-style-type: none;
-    display: grid;
+    /* gridは<>←これに使う*/
     display: grid;
     grid-template:
           "header  header  header  header  header" 
@@ -24,6 +24,8 @@
     background-color: rgb(157, 240, 243);
     grid-area: header;
   }
+
+/* flexboxはクラス指定で使える */
 
   #header {
     display: flex;
