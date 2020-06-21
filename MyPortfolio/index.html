@@ -4,6 +4,7 @@
 <html lang="ja">
 
 <head>
+  <!-- ブラウザの上の部分 -->
   <meta charset="UTF-8">
   <title>工藤のポートフォリオサイト</title>
   <link rel="icon" href="img/twitter_ubFMVXLC_400x400.jpg">
@@ -29,10 +30,15 @@
 </head>
 
 <body>
+  <!-- 中身 -->
+
   <header id="header">
+    <!-- headerは上の部分 -->
 
     <div class="icon">
+      <!-- imageを挿入、表示されない場合alt以下を表示 -->
       <img src="img/twitter_ubFMVXLC_400x400.jpg" width="210" height="210" alt="工藤のアイコンです">
+      <!-- clickしたらalertを出す -->
       <script>
         const icon = document.getElementById("icon");
         icon.addEventListener("click", () => { alert('拡大しちゃだめ！！') });
@@ -50,6 +56,7 @@
       <div>
         出身:宮城
       </div>
+
     </div>
 
 
@@ -61,7 +68,7 @@
       <ul>
         <p>
         <div class="twitter">
-          <!-- リンクを追加(target="_blank"で別タブ) -->
+          <!-- <a>リンクを追加(target="_blank"で別タブ) -->
           <a href="https://twitter.com/ryoheikudo0315" target="_blank">
             <p>
               <img src="img/unnamed.png" width="30" height="30" alt="ツイッターアプリのアイコンです。" class="snsicon">
@@ -96,6 +103,7 @@
   <nav>
     <div class="learning">
       <h1>ドットインストール</h1>
+      <!--<input type="checkbox">でチェックボックスを追加、checked="checked"でチェック済み表示 -->
       <p><input type="checkbox" checked="checked">HTML/CSSの学習環境を整えよう</p>
       <p><input type="checkbox" checked="checked">Visual Studio Code入門</p>
       <p><input type="checkbox" checked="checked">はじめてのHTML</p>
@@ -133,6 +141,7 @@
 
 
   <main>
+    <!-- 主要なものを入れることが多い -->
 
     <div class="works">
 
@@ -142,7 +151,13 @@
 
 
       <div>
-        <h1>(s5)Google Charts</h1>
+        <h1>Google Charts</h1>
+        <p>5th Sample-app</p>
+        <p></p>
+        <label for="start">Start date:</label>
+        <input type="date" value="2020-06-20">
+        <label for="start">Completion date:</label>
+        <input type="date" value="">
         <div id="charts"></div>
         <script src="https://www.gstatic.com/charts/loader.js"></script>
         <script src="js/charts.js"></script>
@@ -151,14 +166,26 @@
 
 
       <div>
-        <h1>(s4)Baloon Sammples</h1>
+        <h1>Baloon Sammples</h1>
+        <p>4th Sample-app</p>
+        <p></p>
+        <label for="start">Start date:</label>
+        <input type="date" value="2020-06-20">
+        <label for="start">Completion date:</label>
+        <input type="date" value="">
         <h2 class="baloon">ex1</h2>
         <div class="ex1"></div>
       </div>
 
 
       <div>
-        <h1>(s3)オセロゲーム</h1>
+        <h1>オセロゲーム</h1>
+        <p>3rd Sample-app</p>
+        <p></p>
+        <label for="start">Start date:</label>
+        <input type="date" value="2020-06-18">
+        <label for="start">Completion date:</label>
+        <input type="date" value="">
         <!--  盤面 -->
         <table id="field"></table>
         <!-- ターンの表示 -->
@@ -169,13 +196,26 @@
       </div>
 
       <div>
-        <h1>(s2)おみくじ</h1>
+        <h1>御神籤</h1>
+        <p>2nd Sample-app</p>
+        <p>表示される吉凶の語の追加とそれに伴う出現確率の変更</p>
+        <label for="start">Start date:</label>
+        <input type="date" value="2020-06-16">
+        <label for="start">Completion date:</label>
+        <input type="date" value="2020-06-18">
         <div class="btn" id="btn">?</div>
         <script src="js/omikuji.js"></script>
       </div>
 
       <div>
-        <h1>(s1)ランダムボックス</h1>
+        <h1>ランダムボックス</h1>
+        <p>1st Sample-app</p>
+        <p></p>
+        <!-- 日付の追加 -->
+        <label for="start">Start date:</label>
+        <input type="date" value="2020-06-16">
+        <label for="start">Completion date:</label>
+        <input type="date" value="">
         <div id="randombox" class="randombox"></div>
         <script type="text/javascript" src="js/random.js"></script>
       </div>
