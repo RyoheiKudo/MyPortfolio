@@ -10,22 +10,19 @@
   <link rel="icon" href="img/twitter_ubFMVXLC_400x400.jpg">
   <meta name="description" content="工藤のポートフォリオです。">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/random.css">
-  <link rel="stylesheet" href="css/omikuji.css">
-  <link rel="stylesheet" href="css/othello.css">
-  <link rel="stylesheet" href="css/balloon.css">
-</head>
+</head>。
+
+<!-- 中身 -->
 
 <body>
-  <!-- 中身 -->
 
+  <!-- headerは上の部分 -->
   <header id="header">
-    <!-- headerは上の部分 -->
 
     <div class="icon">
       <!-- imageを挿入、表示されない場合alt以下を表示 -->
       <img src="img/twitter_ubFMVXLC_400x400.jpg" width="210" height="210" alt="工藤のアイコンです" id="icon">
-      <!-- clickしたらalertを出す -->
+      <!-- (直接書き込むとき)clickしたらalertを出す-->
       <script>
         const icon = document.getElementById("icon");
         icon.addEventListener("click", () => { alert('拡大しちゃだめ！！') });
@@ -43,7 +40,6 @@
       <div>
         大学:青山学院大学
       </div>
-
     </div>
 
 
@@ -52,78 +48,120 @@
     <!-- pタブは段落 -->
 
     <div class="sns">
+
       <ul>
         <p>
+
         <div class="twitter">
           <!-- <a>リンクを追加(target="_blank"で別タブ) -->
           <a href="https://twitter.com/ryoheikudo0315" target="_blank">
             <p>
               <img src="img/unnamed.png" width="30" height="30" alt="ツイッターアプリのアイコンです。" class="snsicon">
             </p>
-            <p>
+            <p style="color: aliceblue;">
               @ryoheikudo0315
             </p>
           </a>
         </div>
+
         </p>
         <p>
+
         <div class="instagram">
           <a href="https://www.instagram.com/ryoheikudo0315/" target="_balank">
             <p>
               <img src="img/download.jpg" width="30" height="30" alt="インスタグラムアプリのアイコンです。" class="snsicon">
             </p>
-            <p>
+            <p style="color: aliceblue;">
               @ryoheikudo0315
             </p>
           </a>
         </div>
-        </p>
-        <p>
+
         </p>
       </ul>
-    </div>
 
+    </div>
 
   </header>
 
-
   <nav>
+    <link rel="stylesheet" href="css/nav.css">
     <div class="learning">
-      <h1>ドットインストール</h1>
-      <!--<input type="checkbox">でチェックボックスを追加、checked="checked"でチェック済み表示 -->
-      <p><input type="checkbox" checked="checked">HTML/CSSの学習環境を整えよう</p>
-      <p><input type="checkbox" checked="checked">Visual Studio Code入門</p>
-      <p><input type="checkbox" checked="checked">はじめてのHTML</p>
-      <p><input type="checkbox" checked="checked">はじめてのCSS</p>
-      <p><input type="checkbox" checked="checked">CSSで吹き出しを作ろう</p>
-      <p><input type="checkbox">Font Awesome 5入門</p>
-      <p><input type="checkbox" checked="checked">はじめてのJavaScript</p>
-      <p><input type="checkbox">Chrome Developer Tools入門 </p>
-      <p><input type="checkbox" checked="checked">JavaScriptでおみくじを作ろう</p>
-      <p><input type="checkbox">Google Charts入門</p>
-      <p><input type="checkbox">Google Maps API入門</p>
-      <p><input type="checkbox">UNIXコマンド入門 [一般ユーザー編]</p>
-      <p><input type="checkbox">ローカル開発環境の構築 [macOS編]</p>
-      <p><input type="checkbox">PostgreSQL入門</p>
-      <p><input type="checkbox">PHP入門</p>
-      <p><input type="checkbox">PHPでビンゴシートを作ろう</p>
-      <p><input type="checkbox">WordPress入門</p>
-      <p><input type="checkbox">Ruby入門</p>
-      <p><input type="checkbox">Ruby on Rails 5入門</p>
-      <h1>progate</h1>
-      <p><input type="checkbox">HTML & CSS
-      </p>
-      <p><input type="checkbox" checked="checked">javascript</p>
-      <p><input type="checkbox">jQuery</p>
-      <p><input type="checkbox">Ruby</p>
-      <p><input type="checkbox">Ruby on Rails5</p>
-      <p><input type="checkbox">PHP</p>
-      <p><input type="checkbox">Python</p>
-      <p><input type="checkbox">Command Line</p>
-      <p><input type="checkbox">Git</p>
-      <p><input type="checkbox">React</p>
-      <p><input type="checkbox">Node.js</p>
+
+      <h1>↓自分用↓</h1>
+      <h1>学習記録</h1>
+
+      <div class="hidden_box">
+        <h2><label for="label 3">学習ファイル ▼</label></h2>
+        <input type="checkbox" id="label 3">
+        <div class="hidden_show">
+          <p><a href="html/r.html" target="_blank">R勉強ファイル</a></p>
+          <p><a href="" target="_blank">Python勉強ファイル</a></p>
+          <p></p>
+        </div>
+
+        <h2><label for="label 2">References ▼</label></h2>
+        <input type="checkbox" id="label 2">
+        <div class="hidden_show">
+          <p><input type="checkbox"><a href="https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_00742.html"
+              target="_blank">□ 高等学校情報科「情報Ⅱ」教員研修用教材(本編)</a></p>
+          <p><input type="checkbox"><a href="http://www.mi.u-tokyo.ac.jp/6university_consortium.html" target="_blank">□
+              数理・データサイエンス教育強化拠点コンソーシアム
+            </a></p>
+          <p><input type="checkbox">
+            <a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/245698/1/Version2020_02_13_01.pdf"
+              target="_blank">□ プログラミング演習 Python 2019</a></p>
+        </div>
+
+
+        <h2><label for="label 1">progate ▼</label></h2>
+        <input type="checkbox" id="label 1">
+        <div class="hidden_show">
+          <!--非表示ここから-->
+          <p><input type="checkbox">□ HTML & CSS</p>
+          <p><input type="checkbox" checked="checked">✔️ JavaScript</p>
+          <p><input type="checkbox">□ jQuery</p>
+          <p><input type="checkbox">□ Ruby</p>
+          <p><input type="checkbox">□ Ruby on Rails5</p>
+          <p><input type="checkbox">□ PHP</p>
+          <p><input type="checkbox">□ Python</p>
+          <p><input type="checkbox">□ Command Line</p>
+          <p><input type="checkbox">□ Git</p>
+          <p><input type="checkbox">□ React</p>
+          <p><input type="checkbox">□ Node.js</p>
+          <!--ここまで-->
+        </div>
+
+        <h2><label for="label 0">ドットインストール ▼</label></h2>
+        <input type="checkbox" id="label 0">
+        <div class="hidden_show">
+          <!--<input type="checkbox">でチェックボックスを追加、checked="checked"でチェック済み表示 -->
+          <p><input type="checkbox" checked="checked">✔️ R言語入門</p>
+          <p><input type="checkbox" checked="checked">✔️ HTML/CSSの学習環境を整えよう</p>
+          <p><input type="checkbox" checked="checked">✔️ Visual Studio Code入門</p>
+          <p><input type="checkbox" checked="checked">✔️ はじめてのHTML</p>
+          <p><input type="checkbox" checked="checked">✔️ はじめてのCSS</p>
+          <p><input type="checkbox" checked="checked">✔️ CSSで吹き出しを作ろう</p>
+          <p><input type="checkbox">□ Font Awesome 5入門</p>
+          <p><input type="checkbox" checked="checked">✔️ はじめてのJavaScript</p>
+          <p><input type="checkbox">□ Chrome Developer Tools入門 </p>
+          <p><input type="checkbox" checked="checked">✔️ JavaScriptでおみくじを作ろう</p>
+          <p><input type="checkbox">□ Google Charts入門</p>
+          <p><input type="checkbox">□ Google Maps API入門</p>
+          <p><input type="checkbox">□ UNIXコマンド入門 [一般ユーザー編]</p>
+          <p><input type="checkbox">□ ローカル開発環境の構築 [macOS編]</p>
+          <p><input type="checkbox">□ PostgreSQL入門</p>
+          <p><input type="checkbox">□ PHP入門</p>
+          <p><input type="checkbox">□ PHPでビンゴシートを作ろう</p>
+          <p><input type="checkbox">□ WordPress入門</p>
+          <p><input type="checkbox">□ Ruby入門</p>
+          <p><input type="checkbox">□ Ruby on Rails 5入門</p>
+
+        </div>
+      </div>
     </div>
+
   </nav>
 
 
@@ -135,7 +173,6 @@
       <h1>作品</h1>
 
       <div> </div>
-
 
       <div>
         <h1>Google Charts</h1>
@@ -150,9 +187,8 @@
         <script src="js/charts.js"></script>
       </div>
 
-
-
       <div>
+        <link rel="stylesheet" href="css/balloon.css">
         <h1>竹取吹き出しくん~LINE風~</h1>
         <p>4th Sample-app</p>
         <p>吹き出しに、テキストを遅延をつけて挿入</p>
@@ -188,6 +224,7 @@
 
 
       <div>
+        <link rel="stylesheet" href="css/othello.css">
         <h1>オセロゲーム</h1>
         <p>3rd Sample-app</p>
         <p></p>
@@ -205,6 +242,7 @@
       </div>
 
       <div>
+        <link rel="stylesheet" href="css/omikuji.css">
         <h1>御神籤（大吉の確率2%!!!!）</h1>
         <p>2nd Sample-app</p>
         <p>表示される吉凶の語の追加とそれに伴う出現確率の変更</p>
@@ -218,6 +256,7 @@
       </div>
 
       <div>
+        <link rel="stylesheet" href="css/random.css">
         <h1>バイバインランダムボックス</h1>
         <h2>（バグかつ仕様です。修正諦めました。）</h2>
         <p>1st Sample-app</p>
@@ -244,21 +283,18 @@
 
 
   <aside>
-    <h1>Coming soon</h1>
+    <h1>コメント欄(作成中)</h1>
     <div>あああ</div>
     <div>いいい</div>
     <div>ううう</div>
   </aside>
-
-
-
-
 
   <footer>
     <small>
       著作権.com、、、は？
     </small>
   </footer>
+
 </body>
 
 </html>
