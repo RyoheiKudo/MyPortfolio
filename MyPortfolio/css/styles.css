@@ -9,7 +9,9 @@
     margin-left: 0px ; 
     margin: 0px; */
     /* margin:0; */
-    background-color: rgba(128, 184, 221, 0.884);
+    background-color: rgb(138,165,204)
+
+    ;
     /* リストの黒点消す */
     list-style-type: none;
     /* gridは<>←これに使う*/
@@ -21,7 +23,9 @@
   }
 
   header{
-    background-color: rgb(157, 240, 243);
+    color: aliceblue;
+    background-color: rgb(37,49,71)
+    ;
     grid-area: header;
   }
 
@@ -49,11 +53,11 @@
   }
 
   .twitter{
-    color: rgb(35, 130, 219);
+    color: aliceblue;
   }
   
   .instagram{
-    color: hsl(325, 75%, 49%);
+    color: aliceblue;
   }
 
   nav {
