@@ -1,98 +1,97 @@
-
 body{
-    color: #333;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* margin-top: 0px ;
-    margin-bottom: 0px ; 
-    margin-right: 0px ; 
-    margin-left: 0px ; 
-    margin: 0px; */
-    /* margin:0; */
-    background-color: rgb(138,165,204);
-    /* リストの黒点消す */
-    list-style-type: none;
-    /* gridは<>←これに使う*/
-    display: grid;
-    grid-template:
-          "header  header  header   header  header" 
-          "left    center  center   center  right "
-          "footer  footer  footer   footer  footer";
-  }
+  color: #333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* margin-top: 0px ;
+  margin-bottom: 0px ; 
+  margin-right: 0px ; 
+  margin-left: 0px ; 
+  margin: 0px; */
+  /* margin:0; */
+  background-color: rgb(138,165,204);
+  /* リストの黒点消す */
+  list-style-type: none;
+  /* gridは<>←これに使う*/
+  display: grid;
+  grid-template:
+        "header  header  header   header  header" 
+        "left    center  center   center  right "
+        "footer  footer  footer   footer  footer";
+}
 
-  header{
-    color: aliceblue;
-    background-color: rgb(37,49,71);
-    grid-area: header;
-  }
+header{
+  color: aliceblue;
+  background-color: rgb(37,49,71);
+  grid-area: header;
+}
 
 /* flexboxはクラス指定で使える */
 
-  #header {
-    display: flex;
-    justify-content: center;
-    /* margin-left: auto;
-    margin-right: auto;
-    flex-direction: column; 
-    align-items: center;   */
-  }
-  
-  .icon img{
-    border-radius: 50% ;
-    border-color: aliceblue;
-    border-style: solid;
-    margin-left: 0px;
-    /* margin: auto;
-    margin-left: 10px; */
-      }
- 
-.icon{
-  margin-right: 30px;
-}
-
-  .snsicon{
-    border-radius: 50% ;
-  }
-.sns {
-  margin-right: 30px;
-
-}
-
-  .twitter{
-    color: aliceblue;
-  }
-  
-  .instagram{
-    color: aliceblue;
-  }
-
-  .twitterTimeline{
-    margin-top: 10px;
-  }
-
-  nav {
-    grid-area: left;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-
-  main {
-    grid-area: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-.works{
-  margin-left: auto;
+#header {
+  display: flex;
+  justify-content: center;
+  /* margin-left: auto;
   margin-right: auto;
+  flex-direction: column; 
+  align-items: center;   */
 }
-  aside {
-    grid-area: right;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
 
-  footer {
-    grid-template: footer;
-    text-align: center;
-              justify-content: center;
-    margin-top: 100px;
-  }
+.icon img{
+  border-radius: 50% ;
+  border-color: aliceblue;
+  border-style: solid;
+  margin-left: 0px;
+  /* margin: auto;
+  margin-left: 10px; */
+    }
+
+.icon{
+margin-right: 30px;
+}
+
+.snsicon{
+  border-radius: 50% ;
+}
+.sns {
+margin-right: 30px;
+
+}
+
+.twitter{
+  color: aliceblue;
+}
+
+.instagram{
+  color: aliceblue;
+}
+
+.twitterTimeline{
+  margin-top: 10px;
+}
+
+nav {
+  grid-area: left;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+main {
+  grid-area: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.works{
+margin-left: auto;
+margin-right: auto;
+}
+aside {
+  grid-area: right;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+footer {
+  grid-template: footer;
+  text-align: center;
+            justify-content: center;
+  margin-top: 100px;
+}
