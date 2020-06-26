@@ -7,7 +7,7 @@
   <!-- ブラウザの上の部分 -->
   <meta charset="UTF-8">
   <title>工藤のポートフォリオサイト</title>
-  <link rel="icon" href="img/twitter_ubFMVXLC_400x400.jpg">
+  <link rel="icon" href="img/mainIcon.jpg">
   <meta name="description" content="工藤のポートフォリオです。">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -21,7 +21,7 @@
 
     <div class="icon">
       <!-- imageを挿入、表示されない場合alt以下を表示 -->
-      <img src="img/twitter_ubFMVXLC_400x400.jpg" width="210" height="210" alt="工藤のアイコンです" id="icon">
+      <img src="img/mainIcon.jpg" width="210" height="210" alt="工藤のアイコンです" id="icon">
       <!-- (直接書き込むとき)clickしたらalertを出す-->
       <script>
         const icon = document.getElementById("icon");
@@ -56,7 +56,7 @@
           <!-- <a>リンクを追加(target="_blank"で別タブ) -->
           <a href="https://twitter.com/ryoheikudo0315" target="_blank">
             <p>
-              <img src="img/unnamed.png" width="30" height="30" alt="ツイッターアプリのアイコンです。" class="snsicon">
+              <img src="img/twitter.png" width="30" height="30" alt="ツイッターアプリのアイコンです。" class="snsicon">
             </p>
             <p style="color: aliceblue;">
               @ryoheikudo0315
@@ -70,7 +70,7 @@
         <div class="instagram">
           <a href="https://www.instagram.com/ryoheikudo0315/" target="_balank">
             <p>
-              <img src="img/download.jpg" width="30" height="30" alt="インスタグラムアプリのアイコンです。" class="snsicon">
+              <img src="img/instagramIcon.jpg" width="30" height="30" alt="インスタグラムアプリのアイコンです。" class="snsicon">
             </p>
             <p style="color: aliceblue;">
               @ryoheikudo0315
@@ -85,8 +85,7 @@
 
     <!-- ツイッターのTLの埋め込み -->
     <div class="twitterTimeline">
-      <a class="twitter-timeline" href="https://twitter.com/ryoheikudo0315?ref_src=twsrc%5Etfw" data-width="200"
-        data-height="200" style="margin:auto;">
+      <a class="twitter-timeline" href="https://twitter.com/ryoheikudo0315?ref_src=twsrc%5Etfw" data-width="200" data-height="200" style="margin:auto;">
       </a>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
@@ -187,7 +186,7 @@
         <p></p>
         <label for="start">Start date:</label>
         <input type="date" value="2020-06-20">
-        <label for="start">Completion date:</label>
+        <label for="start">Last updated:</label>
         <input type="date" value="">
         <div id="charts"></div>
         <script src="https://www.gstatic.com/charts/loader.js"></script>
@@ -201,7 +200,7 @@
         <p>吹き出しに、テキストを遅延をつけて挿入</p>
         <label for="start">Start date:</label>
         <input type="date" value="2020-06-20">
-        <label for="start">Completion date:</label>
+        <label for="start">Last updated:</label>
         <input type="date" value="2020-06-22">
         <p>送信ボタンをおしてね<input type="submit" id="balloon" style="margin-left: 10px;"></p>
         <div class="displayLine">
@@ -237,7 +236,7 @@
         <p></p>
         <label for="start">Start date:</label>
         <input type="date" value="2020-06-18">
-        <label for="start">Completion date:</label>
+        <label for="start">Last updated:</label>
         <input type="date" value="">
         <!--  盤面 -->
         <table id="field"></table>
@@ -255,7 +254,7 @@
         <p>表示される吉凶の語の追加とそれに伴う出現確率の変更</p>
         <label for="start">Start date:</label>
         <input type="date" value="2020-06-16">
-        <label for="start">Completion date:</label>
+        <label for="start">Last updated:</label>
         <input type="date" value="2020-06-18">
         <p>下の？ボタンを押してください。あなたの運勢が占われます。（何回でも押せるよ）</p>
         <div class="btn" id="btn">?</div>
@@ -271,7 +270,7 @@
         <!-- 日付の追加 -->
         <label for="start">Start date:</label>
         <input type="date" value="2020-06-16">
-        <label for="start">Completion date:</label>
+        <label for="start">Last updated:</label>
         <input type="date" value="2020-06-21">
         <p>4から6の間でお好きな数字を選び送信してください。</p>
         <p>タップして当たりが出たらあなたの勝利です。</p>
@@ -296,10 +295,54 @@
     <div>ううう</div>
   </aside>
 
-  <footer>
-    <small>
-      著作権.com、、、は？
-    </small>
+  <footer class="footer">
+    <link rel="stylesheet" href="css/footer.css">
+    <div class="footerContent">
+      <div id="flickSolid">
+        <a href="https://github.com/ryoheikudo" target="_blank">
+          <small>
+            <img src="img/githuIcon.png" width="30" height="30" alt="GitHubのアイコンです。" class="imgGithub">
+            <div id="circleLine">
+              @ryoheikudo に 送信する ☺︎
+            </div>
+            <div>
+              🎤
+            </div>
+          </small>
+        </a>
+      </div>
+      <div class="flickUp">
+        <div class="flickContent kigou1">記号</div>
+        <div class="flickContent a">あ</div>
+        <div class="flickContent ka">か</div>
+        <div class="flickContent sa">さ</div>
+        <div class="flickContent batsu">x</div>
+        <div class="flickContent num">123</div>
+        <div class="flickContent ta">た</div>
+        <div class="flickContent na">な</div>
+        <div class="flickContent ha">は</div>
+        <div class="flickContent sapace">空白</div>
+      </div>
+      <div class="flickDown">
+        <div class="flickContent aa">あA</div>
+        <div class="flickContent ma">ま</div>
+        <div class="flickContent ya">や</div>
+        <div class="flickContent ra">ら</div>
+        <div class="flickContent kaigyo">
+          <div id="kaigyo">
+            改行
+          </div>
+        </div>
+        <div class="flickContent comme">□</div>
+        <div class="flickContent stamp">○</div>
+        <div class="flickContent emoji">^_^</div>
+        <div class="flickContent wa">わ</div>
+        <div class="flickContent kigou2">？</div>
+      </div>
+    </div>
+
+
+
   </footer>
 
 </body>
