@@ -1,5 +1,13 @@
+/* スマホで文字が潰れてしまうのを解消するため */
+footer{
+  display: grid;
+  grid-template:
+        "･･････  footer  footer   footer  ･･････";
+      }
+
 .footerContent{
-  margin: 5px 700px;
+  grid-area: footer;
+  margin: 5px auto;
   background-color: transparent;
   border-style: solid;
   border-color: black;
