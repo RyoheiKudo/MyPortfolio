@@ -1,359 +1,503 @@
 <!DOCTYPE html>
-<html>
 
 <html lang="ja">
+  <head>
+    <!-- ブラウザの上の部分 -->
+    <meta charset="UTF-8" />
+    <title>工藤のポートフォリオサイト</title>
+    <link rel="icon" href="img/mainIcon.jpg" />
+    <meta name="description" content="工藤のポートフォリオです。" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<head>
-  <!-- ブラウザの上の部分 -->
-  <meta charset="UTF-8">
-  <title>工藤のポートフォリオサイト</title>
-  <link rel="icon" href="img/mainIcon.jpg">
-  <meta name="description" content="工藤のポートフォリオです。">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+  <body>
+    <!-- 中身 -->
 
-<!-- 中身 -->
+    <!-- headerは上の部分 -->
+    <header>
+      <link rel="stylesheet" href="css/header.css" />
+      <div id="header">
+        <div class="icon">
+          <!-- imageを挿入、表示されない場合alt以下を表示 -->
+          <img
+            src="img/mainIcon.jpg"
+            width="210"
+            height="210"
+            alt="工藤のアイコンです"
+            id="icon"
+          />
+          <!-- (直接書き込むとき)clickしたらalertを出す-->
+          <script>
+            const icon = document.getElementById("icon");
+            icon.addEventListener("click", () => {
+              alert("拡大しちゃだめ！！");
+            });
+          </script>
+        </div>
 
-<body>
+        <div class="info">
+          <h1>自己紹介</h1>
+          <div>
+            名前:工藤遼平
+          </div>
+          <div>
+            出身:宮城
+          </div>
+          <div>
+            大学:青山学院大学
+          </div>
+        </div>
 
-  <!-- headerは上の部分 -->
-  <header id="header">
+        <!-- ulタブは番号なしリスト（olタブは番号あり） -->
+        <!-- リストの中はliタブでアイテムを記述する -->
+        <!-- pタブは段落 -->
 
-    <div class="icon">
-      <!-- imageを挿入、表示されない場合alt以下を表示 -->
-      <img src="img/mainIcon.jpg" width="210" height="210" alt="工藤のアイコンです" id="icon">
-      <!-- (直接書き込むとき)clickしたらalertを出す-->
-      <script>
-        const icon = document.getElementById("icon");
-        icon.addEventListener("click", () => { alert('拡大しちゃだめ！！') });
-      </script>
-    </div>
+        <div class="sns">
+          <ul>
+            <div class="twitter">
+              <!-- <a>リンクを追加(target="_blank"で別タブ) -->
+              <a href="https://twitter.com/ryoheikudo0315" target="_blank">
+                <p>
+                  <img
+                    src="img/twitter.png"
+                    width="30"
+                    height="30"
+                    alt="ツイッターアプリのアイコンです。"
+                    class="snsicon"
+                  />
+                </p>
+                <p style="color: aliceblue;">
+                  @ryoheikudo0315
+                </p>
+              </a>
+            </div>
 
-    <div class="info">
-      <h1>自己紹介</h1>
-      <div>
-        名前:工藤遼平
+            <div class="instagram">
+              <a
+                href="https://www.instagram.com/ryoheikudo0315/"
+                target="_balank"
+              >
+                <p>
+                  <img
+                    src="img/instagramIcon.jpg"
+                    width="30"
+                    height="30"
+                    alt="インスタグラムアプリのアイコンです。"
+                    class="snsicon"
+                  />
+                </p>
+                <p style="color: aliceblue;">
+                  @ryoheikudo0315
+                </p>
+              </a>
+            </div>
+          </ul>
+        </div>
+
+        <!-- ツイッターのTLの埋め込み -->
+        <div class="twitterTimeline">
+          <a
+            class="twitter-timeline"
+            href="https://twitter.com/ryoheikudo0315?ref_src=twsrc%5Etfw"
+            data-width="200"
+            data-height="200"
+            style="margin: auto;"
+          >
+          </a>
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </div>
       </div>
+
       <div>
-        出身:宮城
+        <div class="titleMain">
+          <h1><label for="hiddenShow1">【JSの勉強】</label></h1>
+          <h1 style="margin: auto 15px;">
+            <label for="hiddenShow2">【統計とRの勉強】</label>
+          </h1>
+          <h1><label for="hiddenShow3">【Pythonの勉強】</label></h1>
+        </div>
       </div>
-      <div>
-        大学:青山学院大学
-      </div>
-    </div>
+    </header>
 
+    <nav>
+      <link rel="stylesheet" href="css/nav.css" />
 
-    <!-- ulタブは番号なしリスト（olタブは番号あり） -->
-    <!-- リストの中はliタブでアイテムを記述する -->
-    <!-- pタブは段落 -->
+      <div class="learning">
+        <h1>↓自分用↓</h1>
+        <h1>学習記録</h1>
 
-    <div class="sns">
-
-      <ul>
-        <p>
-
-        <div class="twitter">
-          <!-- <a>リンクを追加(target="_blank"で別タブ) -->
-          <a href="https://twitter.com/ryoheikudo0315" target="_blank">
+        <div class="hidden_box">
+          <h2><label for="label3">学習ファイル ▼</label></h2>
+          <input type="checkbox" id="label3" />
+          <div class="hidden_show">
+            <p><a href="html/r.html" target="_blank">R勉強ファイル</a></p>
             <p>
-              <img src="img/twitter.png" width="30" height="30" alt="ツイッターアプリのアイコンです。" class="snsicon">
+              <a href="html/python.html" target="_blank">Python勉強ファイル</a>
             </p>
-            <p style="color: aliceblue;">
-              @ryoheikudo0315
+            <p></p>
+          </div>
+
+          <h2><label for="label2">References ▼</label></h2>
+          <input type="checkbox" id="label2" />
+          <div class="hidden_show">
+            <p>
+              <input type="checkbox" /><a
+                href="https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_00742.html"
+                target="_blank"
+                >□ 高等学校情報科「情報Ⅱ」教員研修用教材(本編)</a
+              >
             </p>
+            <p>
+              <input type="checkbox" /><a
+                href="http://www.mi.u-tokyo.ac.jp/6university_consortium.html"
+                target="_blank"
+                >□ 数理・データサイエンス教育強化拠点コンソーシアム
+              </a>
+            </p>
+            <p>
+              <input type="checkbox" />
+              <a
+                href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/245698/1/Version2020_02_13_01.pdf"
+                target="_blank"
+                >□ プログラミング演習 Python 2019</a
+              >
+            </p>
+          </div>
+
+          <h2><label for="label1">progate ▼</label></h2>
+          <input type="checkbox" id="label1" />
+          <div class="hidden_show">
+            <!--非表示ここから-->
+            <p><input type="checkbox" />□ HTML & CSS</p>
+            <p><input type="checkbox" checked="checked" />✔️ JavaScript</p>
+            <p><input type="checkbox" />□ jQuery</p>
+            <p><input type="checkbox" />□ Ruby</p>
+            <p><input type="checkbox" />□ Ruby on Rails5</p>
+            <p><input type="checkbox" />□ PHP</p>
+            <p><input type="checkbox" />□ Python</p>
+            <p><input type="checkbox" />□ Command Line</p>
+            <p><input type="checkbox" />□ Git</p>
+            <p><input type="checkbox" />□ React</p>
+            <p><input type="checkbox" />□ Node.js</p>
+            <!--ここまで-->
+          </div>
+
+          <h2><label for="label0">ドットインストール ▼</label></h2>
+          <input type="checkbox" id="label0" />
+          <div class="hidden_show">
+            <!--<input type="checkbox">でチェックボックスを追加、checked="checked"でチェック済み表示 -->
+            <p><input type="checkbox" checked="checked" />✔️ R言語入門</p>
+            <p>
+              <input type="checkbox" checked="checked" />✔️
+              HTML/CSSの学習環境を整えよう
+            </p>
+            <p>
+              <input type="checkbox" checked="checked" />✔️ Visual Studio
+              Code入門
+            </p>
+            <p><input type="checkbox" checked="checked" />✔️ はじめてのHTML</p>
+            <p><input type="checkbox" checked="checked" />✔️ はじめてのCSS</p>
+            <p>
+              <input type="checkbox" checked="checked" />✔️
+              CSSで吹き出しを作ろう
+            </p>
+            <p><input type="checkbox" />□ Font Awesome 5入門</p>
+            <p>
+              <input type="checkbox" checked="checked" />✔️ はじめてのJavaScript
+            </p>
+            <p><input type="checkbox" />□ Chrome Developer Tools入門</p>
+            <p>
+              <input type="checkbox" checked="checked" />✔️
+              JavaScriptでおみくじを作ろう
+            </p>
+            <p><input type="checkbox" />□ Google Charts入門</p>
+            <p><input type="checkbox" />□ Google Maps API入門</p>
+            <p><input type="checkbox" />□ UNIXコマンド入門 [一般ユーザー編]</p>
+            <p><input type="checkbox" />□ ローカル開発環境の構築 [macOS編]</p>
+            <p><input type="checkbox" />□ PostgreSQL入門</p>
+            <p><input type="checkbox" />□ PHP入門</p>
+            <p><input type="checkbox" />□ PHPでビンゴシートを作ろう</p>
+            <p><input type="checkbox" />□ WordPress入門</p>
+            <p><input type="checkbox" />□ Ruby入門</p>
+            <p><input type="checkbox" />□ Ruby on Rails 5入門</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <link rel="stylesheet" href="css/main.css" />
+
+      <!-- 主要なものを入れることが多い -->
+
+      <div class="works mainContent">
+        <input type="checkbox" class="hiddeninput" id="hiddenShow1" />
+        <div class="visible_show" id="hidden_show1_1">
+          <h1 class="textCenter">作品</h1>
+          <div>
+            <h1>Google Charts</h1>
+            <p>5th Sample-app</p>
+            <p></p>
+            <label for="start">Start date:</label>
+            <input type="date" value="2020-06-20" />
+            <label for="start">Last updated:</label>
+            <input type="date" value="" />
+            <div id="charts"></div>
+            <script src="https://www.gstatic.com/charts/loader.js"></script>
+            <script src="js/charts.js"></script>
+          </div>
+
+          <div>
+            <link rel="stylesheet" href="css/balloon.css" />
+            <h1>竹取吹き出しくん~LINE風~</h1>
+            <p>4th Sample-app</p>
+            <p>吹き出しに、テキストを遅延をつけて挿入</p>
+            <label for="start">Start date:</label>
+            <input type="date" value="2020-06-20" />
+            <label for="start">Last updated:</label>
+            <input type="date" value="2020-06-22" />
+            <p>
+              送信ボタンをおしてね<input
+                type="submit"
+                id="balloon"
+                style="margin-left: 10px;"
+              />
+            </p>
+            <div class="displayLine">
+              <div class="balloon1-1" id="balloon1-1"></div>
+              <p id="time0" class="textLine1"></p>
+            </div>
+            <div class="displayLine">
+              <div class="balloon1-2" id="balloon1-2"></div>
+              <div>
+                <p id="alreadyRead1" class="textLine2"></p>
+                <p id="time1" class="textLine2"></p>
+              </div>
+            </div>
+            <div class="displayLine">
+              <div class="balloon1-3" id="balloon1-3"></div>
+              <p id="time2" class="textLine1"></p>
+            </div>
+            <div class="displayLine">
+              <div class="balloon1-4" id="balloon1-4"></div>
+              <div>
+                <p id="alreadyRead3" class="textLine2"></p>
+                <p id="time3" class="textLine2"></p>
+              </div>
+            </div>
+            <script src="js/balloon.js"></script>
+          </div>
+
+          <div>
+            <link rel="stylesheet" href="css/othello.css" />
+            <h1>オセロゲーム</h1>
+            <p>3rd Sample-app</p>
+            <p></p>
+            <label for="start">Start date:</label>
+            <input type="date" value="2020-06-18" />
+            <label for="start">Last updated:</label>
+            <input type="date" value="" />
+            <!--  盤面 -->
+            <table id="field"></table>
+            <!-- ターンの表示 -->
+            <p id="view_tarn"></p>
+            <!--- 初期化ボタン -->
+            <button type="button" id="ban_init" onclick="ban_init()">
+              やり直し
+            </button>
+            <script src="js/othello.js" text="text/javascript"></script>
+          </div>
+
+          <div>
+            <link rel="stylesheet" href="css/omikuji.css" />
+            <h1>御神籤（大吉の確率2%!!!!）</h1>
+            <p>2nd Sample-app</p>
+            <p>表示される吉凶の語の追加とそれに伴う出現確率の変更</p>
+            <label for="start">Start date:</label>
+            <input type="date" value="2020-06-16" />
+            <label for="start">Last updated:</label>
+            <input type="date" value="2020-06-18" />
+            <p>
+              下の？ボタンを押してください。あなたの運勢が占われます。（何回でも押せるよ）
+            </p>
+            <div class="btn" id="btn">?</div>
+            <script src="js/omikuji.js"></script>
+          </div>
+
+          <div>
+            <link rel="stylesheet" href="css/random.css" />
+            <h1>バイバインランダムボックス</h1>
+            <h2>（バグかつ仕様です。修正諦めました。）</h2>
+            <p>1st Sample-app</p>
+            <p>難易度を調整可能にして、勝利時のアラートを追加</p>
+            <!-- 日付の追加 -->
+            <label for="start">Start date:</label>
+            <input type="date" value="2020-06-16" />
+            <label for="start">Last updated:</label>
+            <input type="date" value="2020-06-21" />
+            <p>4から6の間でお好きな数字を選び送信してください。</p>
+            <p>タップして当たりが出たらあなたの勝利です。</p>
+            <p>※複数回送信するとバイバイン無限栗まんじゅうです。</p>
+            <input type="radio" name="randomnumber" value="4" />4
+            <input type="radio" name="randomnumber" value="5" />5
+            <input type="radio" name="randomnumber" value="6" />6
+            <input type="button" value="submit" id="randomboxbtm" />
+            <div id="randombox">
+              <script type="text/javascript" src="js/random.js"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat mainContent">
+        <input type="checkbox" class="hiddeninput" id="hiddenShow2" />
+        <div class="hidden_show" id="hidden_show2_1">
+          <h1>統計とRの勉強メモ</h1>
+
+          <h2>
+            ~Rで対数の法則~<label for="start" class="textCenter"
+              >Last Updated:</label
+            ><input
+              type="date"
+              value="2020-06-25"
+              style="text-align: center;"
+            />
+          </h2>
+
+          <iframe
+            src="r/index3.r"
+            frameborder="0"
+            height="800"
+            width="100%"
+          ></iframe>
+
+          <h2>
+            ~Rで二項分布~<label for="start" class="textCenter"
+              >Last Updated:</label
+            ><input
+              type="date"
+              value="2020-06-25"
+              style="text-align: center;"
+            />
+          </h2>
+
+          <iframe
+            src="r/index2.r"
+            frameborder="0"
+            height="400"
+            width="100%"
+          ></iframe>
+
+          <h2>
+            ~Rの基礎~<label for="start" class="textCenter">Last Updated:</label
+            ><input
+              type="date"
+              value="2020-06-25"
+              style="text-align: center;"
+            />
+          </h2>
+
+          <iframe
+            src="r/index1.r"
+            frameborder="0"
+            height="500"
+            width="100%"
+          ></iframe>
+          <!-- <iframe src="r/index1.r" frameborder="0" height="100%" width="100%"></iframe>できない -->
+          <!-- スマホでも見れる時、みれない時があるため、改善予定 -->
+        </div>
+      </div>
+
+      <div class="python mainContent">
+        <input type="checkbox" class="hiddeninput" id="hiddenShow3" />
+        <div class="hidden_show" id="hidden_show3_1">
+          <h1 class="textCenter">Pythonの勉強メモ</h1>
+
+          <h2 class="textCenter">
+            ~Pythonの基礎~<label for="start" class="textCenter"
+              >Last Updated:</label
+            ><input
+              type="date"
+              value="2020-06-25"
+              style="text-align: center;"
+            />
+          </h2>
+
+          <iframe
+            src="python/index1.py"
+            frameborder="0"
+            height="2100"
+            width="100%"
+          ></iframe>
+        </div>
+      </div>
+
+      <script src="js/main.js"></script>
+    </main>
+
+    <aside>
+      <h1 class="textCenter">コメント欄(作成中)</h1>
+      <div>あああ</div>
+      <div>いいい</div>
+      <div>ううう</div>
+    </aside>
+
+    <footer class="footer">
+      <link rel="stylesheet" href="css/footer.css" />
+
+      <div class="footerContent">
+        <div id="flickSolid">
+          <a href="https://github.com/ryoheikudo" target="_blank">
+            <small>
+              <img
+                src="img/githuIcon.png"
+                width="30"
+                height="30"
+                alt="GitHubのアイコンです。"
+                class="imgGithub"
+              />
+              <div id="circleLine">
+                @ryoheikudo に 送信する ☺︎
+              </div>
+              <div>
+                🎤
+              </div>
+            </small>
           </a>
         </div>
-
-        </p>
-        <p>
-
-        <div class="instagram">
-          <a href="https://www.instagram.com/ryoheikudo0315/" target="_balank">
-            <p>
-              <img src="img/instagramIcon.jpg" width="30" height="30" alt="インスタグラムアプリのアイコンです。" class="snsicon">
-            </p>
-            <p style="color: aliceblue;">
-              @ryoheikudo0315
-            </p>
-          </a>
+        <div class="flickUp">
+          <div class="flickContent kigou1">記号</div>
+          <div class="flickContent a">あ</div>
+          <div class="flickContent ka">か</div>
+          <div class="flickContent sa">さ</div>
+          <div class="flickContent batsu">x</div>
+          <div class="flickContent num">123</div>
+          <div class="flickContent ta">た</div>
+          <div class="flickContent na">な</div>
+          <div class="flickContent ha">は</div>
+          <div class="flickContent sapace">空白</div>
         </div>
-
-        </p>
-      </ul>
-
-    </div>
-
-    <!-- ツイッターのTLの埋め込み -->
-    <div class="twitterTimeline">
-      <a class="twitter-timeline" href="https://twitter.com/ryoheikudo0315?ref_src=twsrc%5Etfw" data-width="200"
-        data-height="200" style="margin:auto;">
-      </a>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-
-  </header>
-
-
-
-  <nav>
-    <link rel="stylesheet" href="css/nav.css">
-
-
-    <div class="learning">
-
-      <h1>↓自分用↓</h1>
-      <h1>学習記録</h1>
-
-      <div class="hidden_box">
-        <h2><label for="label 3">学習ファイル ▼</label></h2>
-        <input type="checkbox" id="label 3">
-        <div class="hidden_show">
-          <p><a href="html/r.html" target="_blank">R勉強ファイル</a></p>
-          <p><a href="html/python.html" target="_blank">Python勉強ファイル</a></p>
-          <p></p>
-        </div>
-
-        <h2><label for="label 2">References ▼</label></h2>
-        <input type="checkbox" id="label 2">
-        <div class="hidden_show">
-          <p><input type="checkbox"><a href="https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_00742.html"
-              target="_blank">□ 高等学校情報科「情報Ⅱ」教員研修用教材(本編)</a></p>
-          <p><input type="checkbox"><a href="http://www.mi.u-tokyo.ac.jp/6university_consortium.html" target="_blank">□
-              数理・データサイエンス教育強化拠点コンソーシアム
-            </a></p>
-          <p><input type="checkbox">
-            <a href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/245698/1/Version2020_02_13_01.pdf"
-              target="_blank">□ プログラミング演習 Python 2019</a></p>
-        </div>
-
-
-        <h2><label for="label 1">progate ▼</label></h2>
-        <input type="checkbox" id="label 1">
-        <div class="hidden_show">
-          <!--非表示ここから-->
-          <p><input type="checkbox">□ HTML & CSS</p>
-          <p><input type="checkbox" checked="checked">✔️ JavaScript</p>
-          <p><input type="checkbox">□ jQuery</p>
-          <p><input type="checkbox">□ Ruby</p>
-          <p><input type="checkbox">□ Ruby on Rails5</p>
-          <p><input type="checkbox">□ PHP</p>
-          <p><input type="checkbox">□ Python</p>
-          <p><input type="checkbox">□ Command Line</p>
-          <p><input type="checkbox">□ Git</p>
-          <p><input type="checkbox">□ React</p>
-          <p><input type="checkbox">□ Node.js</p>
-          <!--ここまで-->
-        </div>
-
-        <h2><label for="label 0">ドットインストール ▼</label></h2>
-        <input type="checkbox" id="label 0">
-        <div class="hidden_show">
-          <!--<input type="checkbox">でチェックボックスを追加、checked="checked"でチェック済み表示 -->
-          <p><input type="checkbox" checked="checked">✔️ R言語入門</p>
-          <p><input type="checkbox" checked="checked">✔️ HTML/CSSの学習環境を整えよう</p>
-          <p><input type="checkbox" checked="checked">✔️ Visual Studio Code入門</p>
-          <p><input type="checkbox" checked="checked">✔️ はじめてのHTML</p>
-          <p><input type="checkbox" checked="checked">✔️ はじめてのCSS</p>
-          <p><input type="checkbox" checked="checked">✔️ CSSで吹き出しを作ろう</p>
-          <p><input type="checkbox">□ Font Awesome 5入門</p>
-          <p><input type="checkbox" checked="checked">✔️ はじめてのJavaScript</p>
-          <p><input type="checkbox">□ Chrome Developer Tools入門 </p>
-          <p><input type="checkbox" checked="checked">✔️ JavaScriptでおみくじを作ろう</p>
-          <p><input type="checkbox">□ Google Charts入門</p>
-          <p><input type="checkbox">□ Google Maps API入門</p>
-          <p><input type="checkbox">□ UNIXコマンド入門 [一般ユーザー編]</p>
-          <p><input type="checkbox">□ ローカル開発環境の構築 [macOS編]</p>
-          <p><input type="checkbox">□ PostgreSQL入門</p>
-          <p><input type="checkbox">□ PHP入門</p>
-          <p><input type="checkbox">□ PHPでビンゴシートを作ろう</p>
-          <p><input type="checkbox">□ WordPress入門</p>
-          <p><input type="checkbox">□ Ruby入門</p>
-          <p><input type="checkbox">□ Ruby on Rails 5入門</p>
-        </div>
-      </div>
-    </div>
-
-  </nav>
-
-
-  <main>
-    <!-- 主要なものを入れることが多い -->
-
-    <div class="works">
-
-      <h1>作品</h1>
-
-      <div> </div>
-
-      <div>
-        <h1>Google Charts</h1>
-        <p>5th Sample-app</p>
-        <p></p>
-        <label for="start">Start date:</label>
-        <input type="date" value="2020-06-20">
-        <label for="start">Last updated:</label>
-        <input type="date" value="">
-        <div id="charts"></div>
-        <script src="https://www.gstatic.com/charts/loader.js"></script>
-        <script src="js/charts.js"></script>
-      </div>
-
-      <div>
-        <link rel="stylesheet" href="css/balloon.css">
-        <h1>竹取吹き出しくん~LINE風~</h1>
-        <p>4th Sample-app</p>
-        <p>吹き出しに、テキストを遅延をつけて挿入</p>
-        <label for="start">Start date:</label>
-        <input type="date" value="2020-06-20">
-        <label for="start">Last updated:</label>
-        <input type="date" value="2020-06-22">
-        <p>送信ボタンをおしてね<input type="submit" id="balloon" style="margin-left: 10px;"></p>
-        <div class="displayLine">
-          <div class="balloon1-1" id="balloon1-1"></div>
-          <p id="time0" class="textLine1"></p>
-        </div>
-        <div class="displayLine">
-          <div class="balloon1-2" id="balloon1-2"></div>
-          <div>
-            <p id="alreadyRead1" class="textLine2"></p>
-            <p id="time1" class="textLine2"></p>
-          </div>
-        </div>
-        <div class="displayLine">
-          <div class="balloon1-3" id="balloon1-3"></div>
-          <p id="time2" class="textLine1"></p>
-        </div>
-        <div class="displayLine">
-          <div class="balloon1-4" id="balloon1-4"></div>
-          <div>
-            <p id="alreadyRead3" class="textLine2"></p>
-            <p id="time3" class="textLine2"></p>
-          </div>
-        </div>
-        <script src="js/balloon.js"></script>
-      </div>
-
-
-      <div>
-        <link rel="stylesheet" href="css/othello.css">
-        <h1>オセロゲーム</h1>
-        <p>3rd Sample-app</p>
-        <p></p>
-        <label for="start">Start date:</label>
-        <input type="date" value="2020-06-18">
-        <label for="start">Last updated:</label>
-        <input type="date" value="">
-        <!--  盤面 -->
-        <table id="field"></table>
-        <!-- ターンの表示 -->
-        <p id="view_tarn"></p>
-        <!--- 初期化ボタン -->
-        <button type="button" id="ban_init" onclick="ban_init()">やり直し</button>
-        <script src="js/othello.js" text="text/javascript"></script>
-      </div>
-
-      <div>
-        <link rel="stylesheet" href="css/omikuji.css">
-        <h1>御神籤（大吉の確率2%!!!!）</h1>
-        <p>2nd Sample-app</p>
-        <p>表示される吉凶の語の追加とそれに伴う出現確率の変更</p>
-        <label for="start">Start date:</label>
-        <input type="date" value="2020-06-16">
-        <label for="start">Last updated:</label>
-        <input type="date" value="2020-06-18">
-        <p>下の？ボタンを押してください。あなたの運勢が占われます。（何回でも押せるよ）</p>
-        <div class="btn" id="btn">?</div>
-        <script src="js/omikuji.js"></script>
-      </div>
-
-      <div>
-        <link rel="stylesheet" href="css/random.css">
-        <h1>バイバインランダムボックス</h1>
-        <h2>（バグかつ仕様です。修正諦めました。）</h2>
-        <p>1st Sample-app</p>
-        <p>難易度を調整可能にして、勝利時のアラートを追加 </p>
-        <!-- 日付の追加 -->
-        <label for="start">Start date:</label>
-        <input type="date" value="2020-06-16">
-        <label for="start">Last updated:</label>
-        <input type="date" value="2020-06-21">
-        <p>4から6の間でお好きな数字を選び送信してください。</p>
-        <p>タップして当たりが出たらあなたの勝利です。</p>
-        <p>※複数回送信するとバイバイン無限栗まんじゅうです。</p>
-        <input type="radio" name="randomnumber" value="4">4
-        <input type="radio" name="randomnumber" value="5">5
-        <input type="radio" name="randomnumber" value="6">6
-        <input type="button" value="submit" id="randomboxbtm">
-        <div id="randombox">
-          <script type="text/javascript" src="js/random.js"></script>
-        </div>
-      </div>
-
-    </div>
-  </main>
-
-
-  <aside>
-    <h1>コメント欄(作成中)</h1>
-    <div>あああ</div>
-    <div>いいい</div>
-    <div>ううう</div>
-  </aside>
-
-  <footer class="footer">
-    <link rel="stylesheet" href="css/footer.css">
-
-
-    <div class="footerContent">
-      <div id="flickSolid">
-        <a href="https://github.com/ryoheikudo" target="_blank">
-          <small>
-            <img src="img/githuIcon.png" width="30" height="30" alt="GitHubのアイコンです。" class="imgGithub">
-            <div id="circleLine">
-              @ryoheikudo に 送信する ☺︎
+        <div class="flickDown">
+          <div class="flickContent aa">あA</div>
+          <div class="flickContent ma">ま</div>
+          <div class="flickContent ya">や</div>
+          <div class="flickContent ra">ら</div>
+          <div class="flickContent kaigyo">
+            <div id="kaigyo">
+              改行
             </div>
-            <div>
-              🎤
-            </div>
-          </small>
-        </a>
-      </div>
-      <div class="flickUp">
-        <div class="flickContent kigou1">記号</div>
-        <div class="flickContent a">あ</div>
-        <div class="flickContent ka">か</div>
-        <div class="flickContent sa">さ</div>
-        <div class="flickContent batsu">x</div>
-        <div class="flickContent num">123</div>
-        <div class="flickContent ta">た</div>
-        <div class="flickContent na">な</div>
-        <div class="flickContent ha">は</div>
-        <div class="flickContent sapace">空白</div>
-      </div>
-      <div class="flickDown">
-        <div class="flickContent aa">あA</div>
-        <div class="flickContent ma">ま</div>
-        <div class="flickContent ya">や</div>
-        <div class="flickContent ra">ら</div>
-        <div class="flickContent kaigyo">
-          <div id="kaigyo">
-            改行
           </div>
+          <div class="flickContent comme">□</div>
+          <div class="flickContent stamp">○</div>
+          <div class="flickContent emoji">^_^</div>
+          <div class="flickContent wa">わ</div>
+          <div class="flickContent kigou2">？</div>
         </div>
-        <div class="flickContent comme">□</div>
-        <div class="flickContent stamp">○</div>
-        <div class="flickContent emoji">^_^</div>
-        <div class="flickContent wa">わ</div>
-        <div class="flickContent kigou2">？</div>
       </div>
-    </div>
-
-
-
-  </footer>
-
-</body>
-
-</html>
-
+    </footer>
+  </body>
 </html>
