@@ -1,5 +1,12 @@
 "use strict";
 {
+  const icon = document.getElementById("icon");
+  icon.addEventListener("click", () => {
+    alert("拡大しちゃだめ！！");
+  });
+
+}
+{
   const hiddenShow1 = document.getElementById("hiddenShow1");
 
   const hiddenShow2 = document.getElementById("hiddenShow2");
