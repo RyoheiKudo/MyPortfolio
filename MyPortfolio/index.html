@@ -234,10 +234,15 @@
     </div>
 
     <footer>
-      <h1>home</h1>
+      <h1 id="resetAll">home</h1>
       <h1>category</h1>
       <h1>??????</h1>
       <h1>Comments</h1>
+      <script>
+        document.getElementById("resetAll").addEventListener("click", () => {
+          location.reload();
+        });
+      </script>
     </footer>
   </body>
 </html>

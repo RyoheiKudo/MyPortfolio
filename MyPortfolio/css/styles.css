@@ -55,6 +55,7 @@ footer {
 
 footer h1 {
   margin: auto;
+  margin-bottom: initial;
   background-color: rgb(205, 209, 214);
   border-radius: 20px;
 }

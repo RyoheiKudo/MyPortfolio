@@ -32,6 +32,9 @@
   const pythonBasic = document.getElementById("pythonBasic");
   const pythonBasicClick = document.getElementById("pythonBasicClick");
 
+  const rLLNandbinom = document.getElementById("rLLNandbinom");
+  const rLLNandbinomClick = document.getElementById("rLLNandbinomClick");
+
   googleChartsClick.addEventListener("click", () => {
     googleCharts.classList.remove("hidden_show");
     balloonClick.classList.add("hidden_show");
@@ -43,6 +46,7 @@
     rBinomClick.classList.add("hidden_show");
     rBasicClick.classList.add("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
+    rLLNandbinomClick.classList.add("hidden_show");
   });
 
   balloonClick.addEventListener("click", () => {
@@ -56,6 +60,7 @@
     rBinomClick.classList.add("hidden_show");
     rBasicClick.classList.add("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
+    rLLNandbinomClick.classList.add("hidden_show");
   });
 
   othelloClick.addEventListener("click", () => {
@@ -69,6 +74,7 @@
     rBinomClick.classList.add("hidden_show");
     rBasicClick.classList.add("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
+    rLLNandbinomClick.classList.add("hidden_show");
   });
 
   omikujiClick.addEventListener("click", () => {
@@ -82,6 +88,7 @@
     rBinomClick.classList.add("hidden_show");
     rBasicClick.classList.add("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
+    rLLNandbinomClick.classList.add("hidden_show");
   });
 
   randomClick.addEventListener("click", () => {
@@ -95,6 +102,7 @@
     rBinomClick.classList.add("hidden_show");
     rBasicClick.classList.add("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
+    rLLNandbinomClick.classList.add("hidden_show");
   });
 
   rDecisionTreeClick.addEventListener("click", () => {
@@ -108,6 +116,7 @@
     rBinomClick.classList.add("hidden_show");
     rBasicClick.classList.add("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
+    rLLNandbinomClick.classList.add("hidden_show");
   });
 
   rLargeNumsClick.addEventListener("click", () => {
@@ -121,6 +130,7 @@
     rBinomClick.classList.add("hidden_show");
     rBasicClick.classList.add("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
+    rLLNandbinomClick.classList.add("hidden_show");
   });
 
   rBinomClick.addEventListener("click", () => {
@@ -134,6 +144,7 @@
     rBinom.classList.remove("hidden_show");
     rBasicClick.classList.add("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
+    rLLNandbinomClick.classList.add("hidden_show");
   });
 
   rBasicClick.addEventListener("click", () => {
@@ -147,6 +158,7 @@
     rBinomClick.classList.add("hidden_show");
     rBasic.classList.remove("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
+    rLLNandbinomClick.classList.add("hidden_show");
   });
 
   pythonBasicClick.addEventListener("click", () => {
@@ -160,5 +172,20 @@
     rBinomClick.classList.add("hidden_show");
     rBasicClick.classList.add("hidden_show");
     pythonBasic.classList.remove("hidden_show");
+    rLLNandbinomClick.classList.add("hidden_show");
+  });
+  
+  rLLNandbinomClick.addEventListener("click", () => {
+    googleChartsClick.classList.add("hidden_show");
+    balloonClick.classList.add("hidden_show");
+    othelloClick.classList.add("hidden_show");
+    omikujiClick.classList.add("hidden_show");
+    randomClick.classList.add("hidden_show");
+    rDecisionTreeClick.classList.add("hidden_show");
+    rLargeNumsClick.classList.add("hidden_show");
+    rBinomClick.classList.add("hidden_show");
+    rBasicClick.classList.add("hidden_show");
+    pythonBasicClick.classList.add("hidden_show");
+    rLLNandbinom.classList.remove("hidden_show");
   });
 }

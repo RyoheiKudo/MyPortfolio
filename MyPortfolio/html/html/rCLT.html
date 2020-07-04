@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>工藤のポートフォリオサイト</title>
+    <link rel="icon" href="img/mainIcon.jpg" />
+    <meta name="description" content="工藤のポートフォリオです。" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <link rel="stylesheet" href="r/rCLT.r" />
+    <main>
+      <div>
+        <p>setwd() # set working directory #</p>
+        <p>getwd() # current working directory #</p>
+        <p></p>
+        <p>options(digits=10)</p>
+        <p></p>
+        <p>#同じ確率分布にしたいときは、下記から</p>
+        <p>nseed <- 20180926</p>
+        <p>set.seed(nseed)</p>
+        <p></p>
+        <p></p>
+        <p>####### 大数の法則のシュミレーション #########</p>
+        <p></p>
+        <p>n <- 2000 # i.i.d. 確率変数の数 #</p>
+        <p></p>
+        <p>k <- 5000 # 繰り返し値 #</p>
+        <p></p>
+        <p>p <- 0.2 # 成功確率 E(Xi) = mu = であることに注意#</p>
+        <p></p>
+        <p>eps <- 0.05 # 誤差 #</p>
+        <p></p>
+        <p>
+          resultvec <- numeric(k) # 結果をストアするベクトル 各k において| Xbar
+          - p | > epsを満たすのであれば1、満たさなければo #
+        </p>
+        <p>
+          Xbarv <- numeric(k) # Xbarのヒストグラムを表示させるためのベクトル#
+        </p>
+        <p></p>
+        <p></p>
+        <p>for ( i in 1:k ) {</p>
+        <p></p>
+        <p>Xs <- rbinom(n,1,p) # 成功確率pのベルヌーイ分布に従う確率変数n個#</p>
+        <p></p>
+        <p>Xbar <- mean(Xs)</p>
+        <p>Xbarv[i] <- Xbar</p>
+        <p></p>
+        <p>resultvec[i] <- ifelse( ( abs(Xbar-p)<=eps ), 1, 0)</p>
+        <p></p>
+        <p>}</p>
+        <p></p>
+        <p>mean(resultvec) # | Xbar - p | > eps を満たすkのnに占める割合 #</p>
+        <p></p>
+        <p>range <- seq(0,0.4,0.02)</p>
+        <p>hist(Xbarv,breaks=range)</p>
+        <p></p>
+        <p></p>
+      </div>
+    </main>
+  </body>
+</html>
