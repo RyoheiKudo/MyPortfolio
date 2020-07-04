@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <!-- ブラウザの上の部分 -->
+    <meta charset="UTF-8" />
+    <title>工藤のポートフォリオサイト</title>
+    <link rel="icon" href="img/mainIcon.jpg" />
+    <meta name="description" content="工藤のポートフォリオです。" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <link rel="stylesheet" href="r/rBinom.r" />
+    <main>
+      <div>
+        <p>#X~B(N,p)、P(X=x)</p>
+        <p></p>
+        <p>#gamma(n+1)でnの階乗(=n!)</p>
+        <p></p>
+        <p>temp <- function(n) {gamma(n+1)}</p>
+        <p>p <- ((temp (N))/(temp(N - x)*(temp(x))))*((p)^x)*((1-p)*(N-x))</p>
+        <p>p</p>
+        <p></p>
+        <p>
+          #二項係数(n 個から k 個を選ぶ場合の数)．gamma(n+1) / ( gamma(k+1) ×
+          gamma(n-k+1) )
+        </p>
+        <p>com <- choose(n, k)</p>
+        <p>p <- com * ((p)^x)*((1-p)*(N-x))</p>
+        <p>p</p>
+        <p></p>
+        <p># x : ベクトル, prob : 成功の確率</p>
+        <p>p <- dbinom(x, n, prob)</p>
+        <p>p</p>
+        <p></p>
+        <p>#(a =< P =< b)の場合</p>
+        <p>p <- sum(dbinom(a:b, n, prob))</p>
+        <p>p</p>
+      </div>
+    </main>
+  </body>
+</html>
