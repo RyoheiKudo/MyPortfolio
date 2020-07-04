@@ -56,7 +56,33 @@
         <p>range <- seq(0,0.4,0.02)</p>
         <p>hist(Xbarv,breaks=range)</p>
         <p></p>
+        <p>####### 中心極限定理 #########</p>
         <p></p>
+        <p>n <- 100 # i.i.d. 確率変数の数 #</p>
+        <p></p>
+        <p>k <- 10000 # 繰り返し数#</p>
+        <p></p>
+        <p>p <- 0.2 # 成功確率 E(Xi) = mu = p であることに注意 #</p>
+        <p></p>
+        <p>Zv <- numeric(k) # z1, z2, ..., zk をストアするベクトル</p>
+        <p></p>
+        <p>mu <- p # 母平均</p>
+        <p>sigma2 <- p*(1-p) # 毋分散</p>
+        <p></p>
+        <p>for ( i in 1:k ) {</p>
+        <p></p>
+        <p>Xs <- rbinom(n,1,p) # 成功確率pのベルヌーイ分布に従う確率変数n個#</p>
+        <p></p>
+        <p>Xbar <- mean(Xs)</p>
+        <p></p>
+        <p>zi <- sqrt(n) * ( Xbar - mu ) / sqrt(sigma2) # zi #</p>
+        <p></p>
+        <p>Zv[i] <- zi</p>
+        <p></p>
+        <p>}</p>
+        <p></p>
+        <p>range <- seq(-5,5,0.1)</p>
+        <p>hist(Zv,breaks=range)</p>
       </div>
     </main>
   </body>

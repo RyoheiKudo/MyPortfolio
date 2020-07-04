@@ -41,15 +41,14 @@ main {
 }
 
 footer {
+  /* grid-area: footer; */
   color: #333;
   background-color: white;
-  /* grid-area: footer; */
   text-align: center;
   justify-content: center;
   display: flex;
   width: 100%;
   height: 10%;
-  margin-bottom: 10px;
   border-radius: 20px;
 }
 
