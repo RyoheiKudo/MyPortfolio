@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <!-- ブラウザの上の部分 -->
+    <meta charset="UTF-8" />
+    <title>工藤のポートフォリオサイト</title>
+    <link rel="icon" href="img/mainIcon.jpg" />
+    <meta name="description" content="工藤のポートフォリオです。" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header></header>
+
+    <nav></nav>
+
+    <main>
+      <link rel="stylesheet" href="css/main.css" />
+      <div>
+        <link rel="stylesheet" href="css/balloon.css" />
+        <p>4th Sample-app</p>
+        <p>吹き出しに、テキストを遅延をつけて挿入</p>
+        <label for="start">Start date:</label>
+        <input type="date" value="2020-06-20" />
+        <label for="start">Last updated:</label>
+        <input type="date" value="2020-06-22" />
+        <p>
+          送信ボタンをおしてね<input
+            type="submit"
+            id="balloon"
+            style="margin-left: 10px;"
+          />
+        </p>
+        <div class="displayLine">
+          <div class="balloon1-1" id="balloon1-1"></div>
+          <p id="time0" class="textLine1"></p>
+        </div>
+        <div class="displayLine">
+          <div class="balloon1-2" id="balloon1-2"></div>
+          <div>
+            <p id="alreadyRead1" class="textLine2"></p>
+            <p id="time1" class="textLine2"></p>
+          </div>
+        </div>
+        <div class="displayLine">
+          <div class="balloon1-3" id="balloon1-3"></div>
+          <p id="time2" class="textLine1"></p>
+        </div>
+        <div class="displayLine">
+          <div class="balloon1-4" id="balloon1-4"></div>
+          <div>
+            <p id="alreadyRead3" class="textLine2"></p>
+            <p id="time3" class="textLine2"></p>
+          </div>
+        </div>
+        <script src="js/balloon.js"></script>
+      </div>
+    </main>
+
+    <aside></aside>
+
+    <footer class="footer">
+      <link rel="stylesheet" href="css/footer.css" />
+
+      <div class="footerContent">
+        <div id="flickSolid">
+          <a href="https://github.com/ryoheikudo" target="_blank">
+            <small>
+              <img
+                src="img/githuIcon.png"
+                width="30"
+                height="30"
+                alt="GitHubのアイコンです。"
+                class="imgGithub"
+              />
+              <div id="circleLine">
+                @ryoheikudo に 送信する ☺︎
+              </div>
+              <div>
+                🎤
+              </div>
+            </small>
+          </a>
+        </div>
+        <div class="flickUp">
+          <div class="flickContent kigou1">記号</div>
+          <div class="flickContent a">あ</div>
+          <div class="flickContent ka">か</div>
+          <div class="flickContent sa">さ</div>
+          <div class="flickContent batsu">x</div>
+          <div class="flickContent num">123</div>
+          <div class="flickContent ta">た</div>
+          <div class="flickContent na">な</div>
+          <div class="flickContent ha">は</div>
+          <div class="flickContent sapace">空白</div>
+        </div>
+        <div class="flickDown">
+          <div class="flickContent aa">あA</div>
+          <div class="flickContent ma">ま</div>
+          <div class="flickContent ya">や</div>
+          <div class="flickContent ra">ら</div>
+          <div class="flickContent kaigyo">
+            <div id="kaigyo">
+              改行
+            </div>
+          </div>
+          <div class="flickContent comme">□</div>
+          <div class="flickContent stamp">○</div>
+          <div class="flickContent emoji">^_^</div>
+          <div class="flickContent wa">わ</div>
+          <div class="flickContent kigou2">？</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

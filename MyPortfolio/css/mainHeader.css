@@ -1,0 +1,41 @@
+#headerFlex {
+  display: flex;
+  color: aliceblue;
+  background-color: rgb(37, 49, 71);
+  border-radius: 20px;
+}
+
+.info {
+  margin: auto 5px;
+}
+
+#icon {
+  margin: auto;
+}
+
+.icon {
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.snsIcon {
+  color: aliceblue;
+  display: flex;
+  margin: auto 5px;
+}
+
+.snsId {
+  color: aliceblue;
+  margin: auto 5px;
+}
+
+.twitterTimeline {
+  margin-top: 5px;
+  margin-right: auto;
+}
+
+.titleMain {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
