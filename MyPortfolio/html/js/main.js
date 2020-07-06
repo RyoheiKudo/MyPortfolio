@@ -35,6 +35,9 @@
   const rLLNandbinom = document.getElementById("rLLNandbinom");
   const rLLNandbinomClick = document.getElementById("rLLNandbinomClick");
 
+  const nobelPeacePrize = document.getElementById("nobelPeacePrize");
+  const nobelPeacePrizeClick = document.getElementById("nobelPeacePrizeClick");
+
   googleChartsClick.addEventListener("click", () => {
     googleCharts.classList.remove("hidden_show");
     balloonClick.classList.add("hidden_show");
@@ -47,6 +50,7 @@
     rBasicClick.classList.add("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
     rLLNandbinomClick.classList.add("hidden_show");
+    nobelPeacePrizeClick.classList.add("hidden_show");
   });
 
   balloonClick.addEventListener("click", () => {
@@ -61,6 +65,7 @@
     rBasicClick.classList.add("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
     rLLNandbinomClick.classList.add("hidden_show");
+    nobelPeacePrizeClick.classList.add("hidden_show");
   });
 
   othelloClick.addEventListener("click", () => {
@@ -75,6 +80,7 @@
     rBasicClick.classList.add("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
     rLLNandbinomClick.classList.add("hidden_show");
+    nobelPeacePrizeClick.classList.add("hidden_show");
   });
 
   omikujiClick.addEventListener("click", () => {
@@ -89,6 +95,7 @@
     rBasicClick.classList.add("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
     rLLNandbinomClick.classList.add("hidden_show");
+    nobelPeacePrizeClick.classList.add("hidden_show");
   });
 
   randomClick.addEventListener("click", () => {
@@ -103,6 +110,7 @@
     rBasicClick.classList.add("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
     rLLNandbinomClick.classList.add("hidden_show");
+    nobelPeacePrizeClick.classList.add("hidden_show");
   });
 
   rDecisionTreeClick.addEventListener("click", () => {
@@ -117,6 +125,7 @@
     rBasicClick.classList.add("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
     rLLNandbinomClick.classList.add("hidden_show");
+    nobelPeacePrizeClick.classList.add("hidden_show");
   });
 
   rLargeNumsClick.addEventListener("click", () => {
@@ -131,6 +140,7 @@
     rBasicClick.classList.add("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
     rLLNandbinomClick.classList.add("hidden_show");
+    nobelPeacePrizeClick.classList.add("hidden_show");
   });
 
   rBinomClick.addEventListener("click", () => {
@@ -145,6 +155,7 @@
     rBasicClick.classList.add("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
     rLLNandbinomClick.classList.add("hidden_show");
+    nobelPeacePrizeClick.classList.add("hidden_show");
   });
 
   rBasicClick.addEventListener("click", () => {
@@ -159,6 +170,7 @@
     rBasic.classList.remove("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
     rLLNandbinomClick.classList.add("hidden_show");
+    nobelPeacePrizeClick.classList.add("hidden_show");
   });
 
   pythonBasicClick.addEventListener("click", () => {
@@ -173,8 +185,9 @@
     rBasicClick.classList.add("hidden_show");
     pythonBasic.classList.remove("hidden_show");
     rLLNandbinomClick.classList.add("hidden_show");
+    nobelPeacePrizeClick.classList.add("hidden_show");
   });
-  
+
   rLLNandbinomClick.addEventListener("click", () => {
     googleChartsClick.classList.add("hidden_show");
     balloonClick.classList.add("hidden_show");
@@ -187,5 +200,21 @@
     rBasicClick.classList.add("hidden_show");
     pythonBasicClick.classList.add("hidden_show");
     rLLNandbinom.classList.remove("hidden_show");
+    nobelPeacePrizeClick.classList.add("hidden_show");
+  });
+  
+  nobelPeacePrizeClick.addEventListener("click", () => {
+    googleChartsClick.classList.add("hidden_show");
+    balloonClick.classList.add("hidden_show");
+    othelloClick.classList.add("hidden_show");
+    omikujiClick.classList.add("hidden_show");
+    randomClick.classList.add("hidden_show");
+    rDecisionTreeClick.classList.add("hidden_show");
+    rLargeNumsClick.classList.add("hidden_show");
+    rBinomClick.classList.add("hidden_show");
+    rBasicClick.classList.add("hidden_show");
+    pythonBasicClick.classList.add("hidden_show");
+    rLLNandbinomClick.classList.add("hidden_show");
+    nobelPeacePrize.classList.remove("hidden_show");
   });
 }
