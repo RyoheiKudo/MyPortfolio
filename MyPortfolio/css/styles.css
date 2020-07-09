@@ -50,12 +50,11 @@ footer {
   width: 100%;
   height: 10%;
   border-radius: 20px;
-  margin-bottom: initial;
+  margin-bottom: 0;
 }
 
 footer h1 {
-  margin: auto;
-  margin-bottom: initial;
+  margin: auto auto 0 auto;
   background-color: rgb(205, 209, 214);
   border-radius: 20px;
 }
