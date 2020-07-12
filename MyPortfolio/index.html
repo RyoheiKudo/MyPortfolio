@@ -13,11 +13,12 @@
   <body id="bodyAll">
     <header>
       <link rel="stylesheet" href="css/header.css" />
-      <div>
-        <div class="titleMain">
-          <div>うーぬ</div>
-          <div id="homeHeader">ホーム</div>
-          <div id="timeClock"></div>
+      <div class="titleMain">
+        <h1>うーぬ</h1>
+        <h1 id="homeHeader">ホーム</h1>
+        <div>
+          <h1 id="timeClock"></h1>
+          <h2 id="timeComments"></h2>
         </div>
       </div>
       <script src="js/header.js"></script>
@@ -83,7 +84,7 @@
           </div>
 
           <h2 class="pointer">
-            <label for="dotinstall">ドット インストール ▼</label>
+            <label for="dotinstall">ドットインストール ▼</label>
           </h2>
           <input type="checkbox" class="hiddeninput" id="dotinstall" />
           <div class="hidden_show" id="dotinstallHidden">
@@ -231,6 +232,7 @@
           frameborder="0"
           width="100%"
           height="1100px"
+          id="mainFrame"
         >
         </iframe>
       </main>
