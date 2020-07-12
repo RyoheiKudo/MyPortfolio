@@ -6,15 +6,6 @@
   display: none;
 }
 
-/* 見せるようにするクラス */
-.visible_show {
-  padding: 10px 0;
-  height: auto;
-  opacity: 1;
-  overflow: visible;
-  transition: 0.3s;
-}
-
 /* 見せないようにするクラス */
 .hidden_show {
   height: 0;

@@ -1,36 +1,30 @@
 {
-  const hiddenShow0_1 = document.getElementById("hiddenShow0_1");
-  const hiddenShow0_2 = document.getElementById("hiddenShow0_2");
-  const hiddenShow0_3 = document.getElementById("hiddenShow0_3");
+  const references = document.getElementById("references");
+  const progate = document.getElementById("progate");
+  const dotinstall = document.getElementById("dotinstall");
 
-  const hidden_show0_1_1 = document.getElementById("hidden_show0_1_1");
-  const hidden_show0_2_1 = document.getElementById("hidden_show0_2_1");
-  const hidden_show0_3_1 = document.getElementById("hidden_show0_3_1");
+  const referencesHidden = document.getElementById("referencesHidden");
+  const progateHidden = document.getElementById("progateHidden");
+  const dotinstallHidden = document.getElementById("dotinstallHidden");
 
-  hiddenShow0_1.addEventListener("click", () => {
-    hidden_show0_1_1.classList.remove("hidden_show");
-    hidden_show0_2_1.classList.remove("visible_show");
-    hidden_show0_3_1.classList.remove("visible_show");
-    hidden_show0_1_1.classList.add("visible_show");
-    hidden_show0_2_1.classList.add("hidden_show");
-    hidden_show0_3_1.classList.add("hidden_show");
+  const navHiddenShow = function () {
+    referencesHidden.classList.add("hidden_show");
+    progateHidden.classList.add("hidden_show");
+    dotinstallHidden.classList.add("hidden_show");
+  };
+
+  references.addEventListener("click", () => {
+    navHiddenShow();
+    referencesHidden.classList.remove("hidden_show");
   });
 
-  hiddenShow0_2.addEventListener("click", () => {
-    hidden_show0_1_1.classList.remove("visible_show");
-    hidden_show0_2_1.classList.remove("hidden_show");
-    hidden_show0_3_1.classList.remove("visible_show");
-    hidden_show0_1_1.classList.add("hidden_show");
-    hidden_show0_2_1.classList.add("visible_show");
-    hidden_show0_3_1.classList.add("hidden_show");
+  progate.addEventListener("click", () => {
+    navHiddenShow();
+    progateHidden.classList.remove("hidden_show");
   });
 
-  hiddenShow0_3.addEventListener("click", () => {
-    hidden_show0_1_1.classList.remove("visible_show");
-    hidden_show0_2_1.classList.remove("visible_show");
-    hidden_show0_3_1.classList.remove("hidden_show");
-    hidden_show0_1_1.classList.add("hidden_show");
-    hidden_show0_2_1.classList.add("hidden_show");
-    hidden_show0_3_1.classList.add("visible_show");
+  dotinstall.addEventListener("click", () => {
+    navHiddenShow();
+    dotinstallHidden.classList.remove("hidden_show");
   });
 }

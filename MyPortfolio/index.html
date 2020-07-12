@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <body>
+  <body id="bodyAll">
     <header>
+      <link rel="stylesheet" href="css/header.css" />
       <div>
         <div class="titleMain">
-          <h1><label for="hiddenShow1">【JSの勉強】</label></h1>
-          <h1 style="margin: auto 15px;">
-            <label for="hiddenShow2">【統計とRの勉強】</label>
-          </h1>
-          <h1><label for="hiddenShow3">【Pythonの勉強】</label></h1>
+          <div>うーぬ</div>
+          <div id="homeHeader">ホーム</div>
+          <div id="timeClock"></div>
         </div>
       </div>
+      <script src="js/header.js"></script>
     </header>
 
     <div id="mainFlex">
@@ -32,10 +32,10 @@
           <h1>学習記録</h1>
 
           <h2 class="pointer">
-            <label for="hiddenShow0_3">References ▼</label>
+            <label for="references">References ▼</label>
           </h2>
-          <input type="checkbox" class="hiddeninput" id="hiddenShow0_3" />
-          <div class="hidden_show" id="hidden_show0_3_1">
+          <input type="checkbox" class="hiddeninput" id="references" />
+          <div class="hidden_show" id="referencesHidden">
             <p>
               <input type="checkbox" /><a
                 href="https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_00742.html"
@@ -45,10 +45,12 @@
             </p>
 
             <p>
-              <input type="checkbox" /><a
+              <input type="checkbox" />
+              <a
                 href="http://www.mi.u-tokyo.ac.jp/6university_consortium.html"
                 target="_blank"
-                >数理・データサイエンス教育強化拠点コンソーシアム
+              >
+                数理・データサイエンス教育強化拠点コンソーシアム
               </a>
             </p>
             <p>
@@ -61,9 +63,9 @@
             </p>
           </div>
 
-          <h2 class="pointer"><label for="hiddenShow0_2">progate ▼</label></h2>
-          <input type="checkbox" class="hiddeninput" id="hiddenShow0_2" />
-          <div class="hidden_show" id="hidden_show0_2_1">
+          <h2 class="pointer"><label for="progate">progate ▼</label></h2>
+          <input type="checkbox" class="hiddeninput" id="progate" />
+          <div class="hidden_show" id="progateHidden">
             <!--非表示ここから-->
             <p><input type="checkbox" />HTML & CSS</p>
             <p><input type="checkbox" checked="checked" />JavaScript</p>
@@ -81,10 +83,10 @@
           </div>
 
           <h2 class="pointer">
-            <label for="hiddenShow0_1">ドット インストール ▼</label>
+            <label for="dotinstall">ドット インストール ▼</label>
           </h2>
-          <input type="checkbox" class="hiddeninput" id="hiddenShow0_1" />
-          <div class="hidden_show" id="hidden_show0_1_1">
+          <input type="checkbox" class="hiddeninput" id="dotinstall" />
+          <div class="hidden_show" id="dotinstallHidden">
             <p><input type="checkbox" checked="checked" />R言語入門</p>
             <p>
               <input type="checkbox" checked="checked" />
@@ -232,16 +234,26 @@
         >
         </iframe>
       </main>
+
+      <aside>
+        <div>
+          aaaaa
+        </div>
+      </aside>
     </div>
 
     <footer>
       <h1 id="resetAll">【HOME】</h1>
       <h1>【???】</h1>
-      <h1>【???】</h1>
-      <h1>【Comments(未)】</h1>
+      <h1 id="we">【We(未)】</h1>
+      <h1 id="comments" style="color: black;">【Comments(未)】</h1>
       <script>
         document.getElementById("resetAll").addEventListener("click", () => {
           location.reload();
+        });
+        document.getElementById("we").addEventListener("click", () => {});
+        document.getElementById("comments").addEventListener("click", () => {
+          window.open("balloon.html");
         });
       </script>
     </footer>
