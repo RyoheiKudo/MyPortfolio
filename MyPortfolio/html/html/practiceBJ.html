@@ -4,105 +4,117 @@
     <!-- ブラウザの上の部分 -->
     <meta charset="UTF-8" />
     <title>工藤のポートフォリオサイト</title>
-    <link rel="icon" href="img/mainIcon.jpg" />
     <meta name="description" content="工藤のポートフォリオです。" />
-    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <style>
-      .appear {
-        display: flex;
-      }
-    </style>
     <main id="main">
+      <link rel="stylesheet" href="css/practiceBJ.css" />
+
       <div>
         <div>ポーカーの手役の順位と出現頻度</div>
-        <div class="appear">
+        <div class="appear1">
           <div>
             1.ロイヤルストレートフラッシュ
           </div>
-          <div>
+          <div class="probability">
             4 4/2598960
           </div>
         </div>
-        <div class="appear">
+        <div class="appear1">
           <div>
             2.ストレートフラッシュ
           </div>
-          <div>
+          <div class="probability">
             36 36/2598960
           </div>
         </div>
-        <div class="appear">
+        <div class="appear1">
           <div>
             3.フォーオブアカインド
           </div>
-          <div>
+          <div class="probability">
             624 624/2598960
           </div>
         </div>
-        <div class="appear">
+        <div class="appear1">
           <div>
             4.フルハウス
           </div>
-          <div>
+          <div class="probability">
             3744 3744/2598960
           </div>
         </div>
-        <div class="appear">
+        <div class="appear1">
           <div>
             5.フラッシュ
           </div>
-          <div>
+          <div class="probability">
             5108 5108/2598960
           </div>
         </div>
-        <div class="appear">
+        <div class="appear1">
           <div>
             6.ストレート
           </div>
-          <div>
+          <div class="probability">
             10200 10200/2598960
           </div>
         </div>
-        <div class="appear">
+        <div class="appear1">
           <div>
             7.スリーオブアカインド
           </div>
-          <div>
+          <div class="probability">
             54912 54912/2598960
           </div>
         </div>
-        <div class="appear">
+        <div class="appear1">
           <div>
             8.ツーペア
           </div>
-          <div>
+          <div class="probability">
             123552 123552/2598960
           </div>
         </div>
-        <div class="appear">
+        <div class="appear1">
           <div>
             9.ワンペア
           </div>
-          <div>
+          <div class="probability">
             1098240 1098240/2598960
           </div>
         </div>
-        <div class="appear">
+        <div class="appear1">
           <div>
             10.ノーハンド
           </div>
-          <div>
+          <div class="probability">
             1302540 1302540/2598960
           </div>
         </div>
         <div>強さ: 1>2>3>4>5>6>7>8>9>10</div>
       </div>
 
-      <script src="js/practiceBJClick.js"></script>
-      <link rel="stylesheet" href="r/practiceBJClick.r" />
+      <p>自分の手札を挿入して、送信してください</p>
+
+      <div class="appear">
+        <div class="card" id="card1"></div>
+        <div class="card" id="card2"></div>
+        <div class="card" id="card3"></div>
+        <div class="card" id="card4"></div>
+        <div class="card" id="card5"></div>
+      </div>
+      <div class="appear">
+        <input class="numSelection" type="number" id="card1Num" value="" />
+        <input class="numSelection" type="number" id="card2Num" value="" />
+        <input class="numSelection" type="number" id="card3Num" value="" />
+        <input class="numSelection" type="number" id="card4Num" value="" />
+        <input class="numSelection" type="number" id="card5Num" value="" />
+      </div>
+      <input type="submit" onclick="handAnalysis()" />
+      <script src="js/practiceBJ.js"></script>
+      <link rel="stylesheet" href="r/practiceBJ.r" />
     </main>
   </body>
 </html>
