@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>jQuery</title>
+    <link rel="stylesheet" type="text/css" href="" />
+    <!-- jQueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/jQueryBasic.css" />
+  </head>
+  <body>
+    <main>
+      <button><label for="input">jQuery実行</label></button>
+      <input id="input" type="button" onclick="jQuerySubmit()" />
+      <h1 id="h1_1">hide()</h1>
+      <h1 id="h1_2">fadeOut(1500)</h1>
+      <h1 id="h1_3">slideUp(1500)</h1>
+      <h1 class="h1_1">slideUp(1500)</h1>
+      <h1 class="h1_1">slideUp(1500)</h1>
+      <h1 id="h1_4" class="h1_2">fadeIn</h1>
+      <h1 id="h1_5" class="h1_2">fadeIn("slow")</h1>
+      <h1 id="h1_6" class="h1_2">slideDown</h1>
+      <h1 id="h1_7" class="h1_2">slideDown("slow")</h1>
+      <h1 id="h1_8">clickButton</h1>
+      <h1 id="h1_9">clickEventHide</h1>
+      <h1 id="h1_10">css("プロパティ名","値")</h1>
+      <h1 id="h1_11">text</h1>
+      <h1 id="h1_12">text()</h1>
+      <h1 id="h1_13">html()</h1>
+      <h1 class="h1_3">clickThis</h1>
+      <h1 class="h1_3">clickThis</h1>
+      <h1 class="h1_3">clickThis</h1>
+      <h1 id="h1_14">const.</h1>
+      <div id="h1_15">
+        <h2>findでh1のみを取得</h2>
+        <h1>findでh1のみを取得</h1>
+        <h2>findでh1のみを取得</h2>
+        <h1>findでh1のみを取得</h1>
+        <h2>findでh1のみを取得</h2>
+      </div>
+      <h1 id="h1_16">hover</h1>
+      <div id="h1_17"></div>
+
+      <h1>モーダルの勉強</h1>
+
+      <h1 class="login" id="login-show">ログイン(click here)</h1>
+
+      <div class="login-modal-wrapper" id="login-modal">
+        <div class="modal">
+          <div id="login-form">
+            <h2>
+              Emailログイン
+              <div id="login-hidden">X</div>
+            </h2>
+            <form action="#">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="メールアドレス"
+              />
+              <input
+                class="form-control"
+                type="password"
+                placeholder="パスワード"
+              />
+              <div id="submit-btn">ログイン</div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <h1>スライドの勉強</h1>
+
+      <div class="slide-wrapper">
+        <h2 class="slide-title">my photography</h2>
+        <ul class="slides">
+          <!-- 一つ目の「.slide」要素のみ、activeというクラスを追加してください -->
+          <li class="slide active">
+            <img src="img/hashimoto0.jpg" />
+          </li>
+
+          <li class="slide">
+            <img src="img/hashimoto1.jpg" />
+          </li>
+
+          <li class="slide">
+            <img src="img/hashimoto2.jpg" />
+          </li>
+
+          <li class="slide">
+            <img src="img/hashimoto3.jpg" />
+          </li>
+        </ul>
+        <div class="index-btn-wrapper">
+          <div class="index-btn">1</div>
+          <div class="index-btn" id="second-btn">2</div>
+          <div class="index-btn">3</div>
+          <div class="index-btn">4</div>
+        </div>
+      </div>
+
+      <script src="js/jQueryBasic.js"></script>
+    </main>
+  </body>
+</html>

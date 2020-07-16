@@ -1,0 +1,135 @@
+/* jQueryの勉強 */
+
+.h1_2 {
+  /* img{display:block;} */
+  display: none;
+}
+#h1_10 {
+  color: blue;
+}
+
+#input {
+  display: none;
+}
+
+/*モーダルの勉強*/
+
+.login {
+  /* line-height: 65px;
+  padding: 0 25px; */
+  color: black;
+  cursor: pointer;
+  display: block;
+}
+
+.login-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  /* display: none;を追加してください */
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+#login-form {
+  width: 100%;
+}
+
+#login-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#login-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+/* スライドの勉強 */
+
+ul {
+  list-style: none;
+}
+
+.slide-wrapper {
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+  color: #5e6f84;
+  padding: 60px 0;
+}
+
+.slide-title {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.slides {
+  padding: 0;
+}
+
+.slide {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.slide img {
+  width: 500px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.index-btn-wrapper {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.index-btn {
+  display: inline-block;
+  color: #4e90af;
+  background-color: #e0f5ff;
+  width: 40px;
+  padding: 6px 0;
+  margin: 0 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.index-btn:hover {
+  color: #fff;
+  background-color: #5cabd0;
+}

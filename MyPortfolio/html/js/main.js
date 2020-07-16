@@ -44,6 +44,12 @@
   const googleMaps = document.getElementById("googleMaps");
   const googleMapsClick = document.getElementById("googleMapsClick");
 
+  const phpBasic = document.getElementById("phpBasic");
+  const phpBasicClick = document.getElementById("phpBasicClick");
+
+  const jQueryBasic = document.getElementById("jQueryBasic");
+  const jQueryBasicClick = document.getElementById("jQueryBasicClick");
+
   const allHidden = function () {
     googleChartsClick.classList.add("hidden_show");
     balloonClick.classList.add("hidden_show");
@@ -59,6 +65,8 @@
     nobelPeacePrizeClick.classList.add("hidden_show");
     practiceBJClick.classList.add("hidden_show");
     googleMapsClick.classList.add("hidden_show");
+    phpBasicClick.classList.add("hidden_show");
+    jQueryBasicClick.classList.add("hidden_show");
   };
 
   googleChartsClick.addEventListener("click", () => {
@@ -143,5 +151,17 @@
     allHidden();
     googleMapsClick.classList.remove("hidden_show");
     googleMaps.classList.remove("hidden_show");
+  });
+
+  phpBasicClick.addEventListener("click", () => {
+    allHidden();
+    phpBasicClick.classList.remove("hidden_show");
+    phpBasic.classList.remove("hidden_show");
+  });
+
+  jQueryBasicClick.addEventListener("click", () => {
+    allHidden();
+    jQueryBasicClick.classList.remove("hidden_show");
+    jQueryBasic.classList.remove("hidden_show");
   });
 }
