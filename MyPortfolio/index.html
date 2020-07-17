@@ -8,6 +8,7 @@
     <link rel="icon" href="img/mainIcon.jpg" />
     <meta name="description" content="工藤のポートフォリオです。" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
 
   <body id="bodyAll">
@@ -246,19 +247,28 @@
     </div>
 
     <footer>
-      <h1 id="resetAll">【HOME】</h1>
-      <h1>【???】</h1>
-      <h1 id="we">【We(未)】</h1>
-      <h1 id="comments" style="color: black;">【Comments(未)】</h1>
-      <script>
-        document.getElementById("resetAll").addEventListener("click", () => {
-          location.reload();
-        });
-        document.getElementById("we").addEventListener("click", () => {});
-        document.getElementById("comments").addEventListener("click", () => {
-          window.open("balloon.html");
-        });
-      </script>
+      <link rel="stylesheet" href="css/footer.css" />
+      <h1 id="resetAll">【TimeLine】</h1>
+      <h1 id="Apps">【Apps(未)】</h1>
+      <h1 id="we">【?????(未)】</h1>
+      <h1 id="comments">【Comments(未)】</h1>
+      <div class="login-modal-wrapper" id="login-modal">
+        <div class="modal">
+          <div id="login-form">
+            <div id="login-form-header">
+              <h2>
+                コメント
+              </h2>
+              <h2 id="login-hidden">X</h2>
+            </div>
+            <form action="#">
+              <input class="form-control" type="text" placeholder="コメント" />
+              <div id="submit-btn">送信</div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <script src="js/footer.js"></script>
     </footer>
   </body>
 </html>

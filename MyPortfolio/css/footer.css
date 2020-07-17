@@ -1,139 +1,73 @@
-/* スマホで文字が潰れてしまうのを解消するため */
-footer{
-  display: grid;
-  grid-template:
-        "･･････  footer  footer   footer  ･･････";
-      }
+/*モーダルの勉強*/
 
-.footerContent{
-  grid-area: footer;
-  margin: 5px auto;
-  background-color: transparent;
-  border-style: solid;
-  border-color: black;
-}
-
-#flickSolid {
-background-color: transparent;
-border-style: solid;
-border-color: transparent transparent black transparent;
-}
-
-small{
-  display: flex;
-}
-.imgGithub{
-  margin-left: 10px;
-  margin-right: 3px;
-}
-
-#circleLine {
+.login {
+  /* line-height: 65px;
+  padding: 0 25px; */
   color: black;
+  cursor: pointer;
+  display: block;
+}
+
+.login-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  /* display: none;を追加してください */
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+#login-form-header {
+  display: flex;
+  justify-content: center;
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#login-hidden {
+  margin-right: 0;
+  margin-left: 100px;
   background-color: transparent;
-  border-radius: 20%;
-  border: 1px;  
   border-style: solid;
   border-color: gray;
-  margin-right: 5px;
 }
 
-.flickUp{
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-auto-rows: 50px;
-  grid-auto-columns:50px ;
-  column-gap: 1px;
-  row-gap: 1px;
-}
-.flickDown{
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-auto-rows: 50px;
-  grid-auto-columns:50px ;
-  column-gap: 1px;
-  row-gap: 1px
+#login-form {
+  width: 100%;
 }
 
-.kaigyo {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;;
-}
-#kaigyo{
-text-align: center;
-margin-top: 20px;
+#login-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
 }
 
-.aa{
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-.ma{
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-.ya{
-  grid-column-start: 5;
-  grid-column-end: 7;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-.ra{
-  grid-column-start: 7;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.kaigyo{
-  grid-column-start: 9;
-  grid-column-end: 11;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-.comme{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-
-}
-.stamp{  
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3
-}
-.emoji{
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3
-}
-.wa{
-  grid-column-start: 5;
-  grid-column-end: 7;
-  grid-row-start: 2;
-  grid-row-end: 3
-}
-.kigou2{
-  grid-column-start: 7;
-  grid-column-end: 9;
-  grid-row-start: 2;
-  grid-row-end: 3
-}
-
-.flickContent{
-  background-color: transparent;
-  border-radius: 10%;
-  border: 1px;  
-  border-style: solid;
-  border-color: gray;
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
 }
