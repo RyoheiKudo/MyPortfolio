@@ -12,7 +12,7 @@
   </head>
 
   <body id="bodyAll">
-    <header>
+    <header id="header">
       <link rel="stylesheet" href="css/header.css" />
       <div class="titleMain">
         <h1 id="homeHeader">ホーム</h1>
@@ -24,234 +24,225 @@
       <script src="js/header.js"></script>
     </header>
 
-    <div id="mainFlex">
-      <nav>
-        <link rel="stylesheet" href="css/nav.css" />
+    <nav id="nav">
+      <link rel="stylesheet" href="css/nav.css" />
 
-        <div class="learning">
-          <h1>↓自分用↓</h1>
-          <h1>学習記録</h1>
+      <div class="learning">
+        <h1>↓自分用↓</h1>
+        <h1>学習記録</h1>
 
-          <h2 class="pointer">
-            <label for="references">References ▼</label>
-          </h2>
-          <input type="checkbox" class="hiddeninput" id="references" />
-          <div class="hidden_show" id="referencesHidden">
-            <p>
-              <input type="checkbox" /><a
-                href="https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_00742.html"
-                target="_blank"
-                >高等学校情報科「情報Ⅱ」教員研修用教材(本編)</a
-              >
-            </p>
-
-            <p>
-              <input type="checkbox" />
-              <a
-                href="http://www.mi.u-tokyo.ac.jp/6university_consortium.html"
-                target="_blank"
-              >
-                数理・データサイエンス教育強化拠点コンソーシアム
-              </a>
-            </p>
-            <p>
-              <input type="checkbox" />
-              <a
-                href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/245698/1/Version2020_02_13_01.pdf"
-                target="_blank"
-                >プログラミング演習 Python 2019</a
-              >
-            </p>
-          </div>
-
-          <h2 class="pointer"><label for="progate">progate ▼</label></h2>
-          <input type="checkbox" class="hiddeninput" id="progate" />
-          <div class="hidden_show" id="progateHidden">
-            <!--非表示ここから-->
-            <p><input type="checkbox" />HTML & CSS</p>
-            <p><input type="checkbox" checked="checked" />JavaScript</p>
-            <p><input type="checkbox" />jQuery</p>
-            <p><input type="checkbox" />Ruby</p>
-            <p><input type="checkbox" />Ruby on Rails5</p>
-            <p><input type="checkbox" />PHP</p>
-            <p><input type="checkbox" />Python</p>
-            <p><input type="checkbox" />Command Line</p>
-            <p><input type="checkbox" />Git</p>
-            <p><input type="checkbox" />React</p>
-            <p><input type="checkbox" />Node.js</p>
-            <!--ここまで-->
-            reloadNovel();
-          </div>
-
-          <h2 class="pointer">
-            <label for="dotinstall">ドットインストール ▼</label>
-          </h2>
-          <input type="checkbox" class="hiddeninput" id="dotinstall" />
-          <div class="hidden_show" id="dotinstallHidden">
-            <p><input type="checkbox" checked="checked" />R言語入門</p>
-            <p>
-              <input type="checkbox" checked="checked" />
-              HTML/CSSの学習環境を整えよう
-            </p>
-            <p>
-              <input type="checkbox" checked="checked" />Visual Studio Code入門
-            </p>
-            <p><input type="checkbox" checked="checked" />はじめてのHTML</p>
-            <p><input type="checkbox" checked="checked" />はじめてのCSS</p>
-            <p>
-              <input type="checkbox" checked="checked" />CSSで吹き出しを作ろう
-            </p>
-            <p><input type="checkbox" />Font Awesome 5入門</p>
-            <p>
-              <input type="checkbox" checked="checked" />はじめてのJavaScript
-            </p>
-            <p><input type="checkbox" />Chrome Developer Tools入門</p>
-            <p>
-              <input type="checkbox" checked="checked" />
-              JavaScriptでおみくじを作ろう
-            </p>
-            <p><input type="checkbox" checked="checked" />Google Charts入門</p>
-            <p>
-              <input type="checkbox" checked="checked" />Google Maps API入門
-            </p>
-            <p><input type="checkbox" />UNIXコマンド入門 [一般ユーザー編]</p>
-            <p><input type="checkbox" />ローカル開発環境の構築 [macOS編]</p>
-            <p><input type="checkbox" />PostgreSQL入門</p>
-            <p><input type="checkbox" />Dockerを導入しよう</p>
-            <p><input type="checkbox" checked="checked" />Docker入門</p>
-            <p><input type="checkbox" />はじめてのPHP</p>
-            <p><input type="checkbox" />WordPress入門</p>
-            <p><input type="checkbox" />Ruby入門</p>
-          </div>
-        </div>
-        <script src="js/nav.js"></script>
-      </nav>
-
-      <main>
-        <link rel="stylesheet" href="css/mainHeader.css" />
-
-        <div id="headerFlex">
-          <!-- imageを挿入、表示されない場合alt以下を表示 -->
-
-          <img
-            src="img/mainIcon.jpg"
-            alt="工藤のアイコンです"
-            width="180"
-            height="180"
-            id="icon"
-            class="icon"
-          />
-
-          <div class="info">
-            <div>
-              工藤遼平
-            </div>
-            <div style="margin-top: 10px; margin-bottom: 10px;">
-              出身:宮城
-            </div>
-            <div>
-              青山学院大学
-            </div>
-          </div>
-
-          <div class="sns">
-            <!-- <a>リンクを追加(target="_blank"で別タブ) -->
-            <a
-              href="https://twitter.com/ryoheikudo0315"
+        <h2 class="pointer">
+          <label for="references">References ▼</label>
+        </h2>
+        <input type="checkbox" class="hiddeninput" id="references" />
+        <div class="hidden_show" id="referencesHidden">
+          <p>
+            <input type="checkbox" /><a
+              href="https://www.mext.go.jp/a_menu/shotou/zyouhou/detail/mext_00742.html"
               target="_blank"
-              class="snsIcon"
-              style="margin-top: 30px;"
+              >高等学校情報科「情報Ⅱ」教員研修用教材(本編)</a
             >
-              <img
-                src="img/twitter.png"
-                width="30"
-                height="30"
-                alt="ツイッターアプリのアイコンです。"
-                class="snsicon icon"
-              />
-              <div class="snsId">
-                @ryoheikudo0315
-              </div>
-            </a>
+          </p>
 
+          <p>
+            <input type="checkbox" />
             <a
-              href="https://www.instagram.com/ryoheikudo0315/"
-              target="_balank"
-              class="snsIcon"
-            >
-              <img
-                src="img/instagramIcon.jpg"
-                width="30"
-                height="30"
-                alt="インスタグラムアプリのアイコンです。"
-                class="snsicon icon"
-                style="margin-top: 10px; margin-bottom: 10px;"
-              />
-              <div class="snsId" style="margin-top: 10px; margin-bottom: 10px;">
-                @ryoheikudo0315
-              </div>
-            </a>
-
-            <a
-              href="https://github.com/ryoheikudo"
+              href="http://www.mi.u-tokyo.ac.jp/6university_consortium.html"
               target="_blank"
-              class="snsIcon"
             >
-              <img
-                src="img/githuIcon.png"
-                width="30"
-                height="30"
-                alt="GitHubのアイコンです。"
-                class="snsicon icon"
-              />
-              <div class="snsId">
-                @ryoheikudo
-              </div>
+              数理・データサイエンス教育強化拠点コンソーシアム
             </a>
-            <script src="js/main.js"></script>
-          </div>
-
-          <!-- ツイッターのTLの埋め込み -->
-          <div class="twitterTimeline">
+          </p>
+          <p>
+            <input type="checkbox" />
             <a
-              class="twitter-timeline"
-              href="https://twitter.com/ryoheikudo0315?ref_src=twsrc%5Etfw"
-              data-width="100"
-              data-height="100"
-              style="margin: auto;"
+              href="https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/245698/1/Version2020_02_13_01.pdf"
+              target="_blank"
+              >プログラミング演習 Python 2019</a
             >
-            </a>
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-              charset="utf-8"
-            ></script>
-          </div>
+          </p>
         </div>
 
-        <iframe
-          src="html/index.html"
-          frameborder="0"
-          width="100%"
-          height="1100px"
-          id="mainFrame"
-        >
+        <h2 class="pointer"><label for="progate">progate ▼</label></h2>
+        <input type="checkbox" class="hiddeninput" id="progate" />
+        <div class="hidden_show" id="progateHidden">
+          <!--非表示ここから-->
+          <p><input type="checkbox" />HTML & CSS</p>
+          <p><input type="checkbox" checked="checked" />JavaScript</p>
+          <p><input type="checkbox" />jQuery</p>
+          <p><input type="checkbox" />Ruby</p>
+          <p><input type="checkbox" />Ruby on Rails5</p>
+          <p><input type="checkbox" />PHP</p>
+          <p><input type="checkbox" />Python</p>
+          <p><input type="checkbox" />Command Line</p>
+          <p><input type="checkbox" />Git</p>
+          <p><input type="checkbox" />React</p>
+          <p><input type="checkbox" />Node.js</p>
+          <!--ここまで-->
+          reloadNovel();
+        </div>
+
+        <h2 class="pointer">
+          <label for="dotinstall">ドットインストール ▼</label>
+        </h2>
+        <input type="checkbox" class="hiddeninput" id="dotinstall" />
+        <div class="hidden_show" id="dotinstallHidden">
+          <p><input type="checkbox" checked="checked" />R言語入門</p>
+          <p>
+            <input type="checkbox" checked="checked" />
+            HTML/CSSの学習環境を整えよう
+          </p>
+          <p>
+            <input type="checkbox" checked="checked" />Visual Studio Code入門
+          </p>
+          <p><input type="checkbox" checked="checked" />はじめてのHTML</p>
+          <p><input type="checkbox" checked="checked" />はじめてのCSS</p>
+          <p>
+            <input type="checkbox" checked="checked" />CSSで吹き出しを作ろう
+          </p>
+          <p><input type="checkbox" />Font Awesome 5入門</p>
+          <p><input type="checkbox" checked="checked" />はじめてのJavaScript</p>
+          <p><input type="checkbox" />Chrome Developer Tools入門</p>
+          <p>
+            <input type="checkbox" checked="checked" />
+            JavaScriptでおみくじを作ろう
+          </p>
+          <p><input type="checkbox" checked="checked" />Google Charts入門</p>
+          <p><input type="checkbox" checked="checked" />Google Maps API入門</p>
+          <p><input type="checkbox" />UNIXコマンド入門 [一般ユーザー編]</p>
+          <p><input type="checkbox" />ローカル開発環境の構築 [macOS編]</p>
+          <p><input type="checkbox" />PostgreSQL入門</p>
+          <p><input type="checkbox" />Dockerを導入しよう</p>
+          <p><input type="checkbox" checked="checked" />Docker入門</p>
+          <p><input type="checkbox" />はじめてのPHP</p>
+          <p><input type="checkbox" />WordPress入門</p>
+          <p><input type="checkbox" />Ruby入門</p>
+        </div>
+      </div>
+      <script src="js/nav.js"></script>
+    </nav>
+
+    <main id="main">
+      <link rel="stylesheet" href="css/main.css" />
+
+      <div id="headerFlex">
+        <!-- imageを挿入、表示されない場合alt以下を表示 -->
+
+        <img
+          src="img/mainIcon.jpg"
+          alt="工藤のアイコンです"
+          width="180"
+          height="180"
+          id="icon"
+          class="icon"
+        />
+
+        <div class="info">
+          <div>
+            工藤遼平
+          </div>
+          <div style="margin-top: 10px; margin-bottom: 10px;">
+            出身:宮城
+          </div>
+          <div>b 青山学院大学</div>
+        </div>
+
+        <div class="sns">
+          <!-- <a>リンクを追加(target="_blank"で別タブ) -->
+          <a
+            href="https://twitter.com/ryoheikudo0315"
+            target="_blank"
+            class="snsIcon"
+            style="margin-top: 30px;"
+          >
+            <img
+              src="img/twitter.png"
+              width="30"
+              height="30"
+              alt="ツイッターアプリのアイコンです。"
+              class="snsicon icon"
+            />
+            <div class="snsId">
+              @ryoheikudo0315
+            </div>
+          </a>
+
+          <a
+            href="https://www.instagram.com/ryoheikudo0315/"
+            target="_balank"
+            class="snsIcon"
+          >
+            <img
+              src="img/instagramIcon.jpg"
+              width="30"
+              height="30"
+              alt="インスタグラムアプリのアイコンです。"
+              class="snsicon icon"
+              style="margin-top: 10px; margin-bottom: 10px;"
+            />
+            <div class="snsId" style="margin-top: 10px; margin-bottom: 10px;">
+              @ryoheikudo0315
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/ryoheikudo"
+            target="_blank"
+            class="snsIcon"
+          >
+            <img
+              src="img/githuIcon.png"
+              width="30"
+              height="30"
+              alt="GitHubのアイコンです。"
+              class="snsicon icon"
+            />
+            <div class="snsId">
+              @ryoheikudo
+            </div>
+          </a>
+          <script src="js/main.js"></script>
+        </div>
+
+        <!-- ツイッターのTLの埋め込み -->
+        <div class="twitterTimeline">
+          <a
+            class="twitter-timeline"
+            href="https://twitter.com/ryoheikudo0315?ref_src=twsrc%5Etfw"
+            data-width="100"
+            data-height="100"
+            style="margin: auto;"
+          >
+          </a>
+
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </div>
+      </div>
+      <div id="main-frame-content">
+        メインコンテンツです
+      </div>
+    </main>
+
+    <aside id="aside">
+      <link rel="stylesheet" href="css/aside.css" />
+      <div id="comment-frame">
+        <iframe src="">
+          読み込んでいます…
         </iframe>
-      </main>
+      </div>
+    </aside>
 
-      <aside>
-        <div>
-          aaaaa
-        </div>
-      </aside>
-    </div>
-
-    <footer>
+    <footer id="footer">
       <link rel="stylesheet" href="css/footer.css" />
-      <h1 id="resetAll">【TimeLine】</h1>
+      <h1 id="timeLine">【TimeLine】</h1>
       <h1 id="Apps">【Apps(未)】</h1>
       <h1 id="we">【?????(未)】</h1>
       <h1 id="comments">【Comments(未)】</h1>
+
       <div class="login-modal-wrapper" id="login-modal">
         <div class="modal">
           <div id="login-form">
@@ -259,12 +250,38 @@
               <h2>
                 コメント
               </h2>
-              <h2 id="login-hidden">X</h2>
+              <h2 id="login-hidden">×</h2>
             </div>
-            <form action="#">
-              <input class="form-control" type="text" placeholder="コメント" />
-              <div id="submit-btn">送信</div>
-            </form>
+
+            <div id="login-form-selection">
+              <div class="login-form-selection" id="login-form-selection1">
+                Google アンケートで回答
+              </div>
+              <div class="login-form-selection" id="login-form-selection2">
+                Twitter の方
+              </div>
+              <div class="login-form-selection" id="login-form-selection3">
+                Instagram の方
+              </div>
+            </div>
+
+            <!-- <form action="#"> -->
+            <!-- <input class="form-control" type="text" placeholder="コメント" /> -->
+            <!-- <div id="submit-btn">送信</div> -->
+
+            <div id="submit-frame">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSccwlvwqF9xAgWJQioLmFBE9wZsQYHZBszMR_mfKMVVvOYeug/viewform?embedded=true"
+                scrolling="no"
+                frameborder="0"
+                width="300px"
+                height="350px"
+                id="submit-frame-content"
+              >
+                読み込んでいます…
+              </iframe>
+            </div>
+            <!-- </form> -->
           </div>
         </div>
       </div>
