@@ -50,6 +50,12 @@
   const jQueryBasic = document.getElementById("jQueryBasic");
   const jQueryBasicClick = document.getElementById("jQueryBasicClick");
 
+  const vueBasic = document.getElementById("vueBasic");
+  const vueBasicClick = document.getElementById("vueBasicClick");
+
+  const reactBasic = document.getElementById("reactBasic");
+  const reactBasicClick = document.getElementById("reactBasicClick");
+
   const allHidden = function () {
     googleChartsClick.classList.add("hidden_show");
     balloonClick.classList.add("hidden_show");
@@ -67,7 +73,21 @@
     googleMapsClick.classList.add("hidden_show");
     phpBasicClick.classList.add("hidden_show");
     jQueryBasicClick.classList.add("hidden_show");
+    vueBasicClick.classList.add("hidden_show");
+    reactBasicClick.classList.add("hidden_show");
   };
+
+  vueBasicClick.addEventListener("click", () => {
+    allHidden();
+    vueBasicClick.classList.remove("hidden_show");
+    vueBasic.classList.remove("hidden_show");
+  });
+
+  reactBasicClick.addEventListener("click", () => {
+    allHidden();
+    reactBasicClick.classList.remove("hidden_show");
+    reactBasic.classList.remove("hidden_show");
+  });
 
   googleChartsClick.addEventListener("click", () => {
     allHidden();
