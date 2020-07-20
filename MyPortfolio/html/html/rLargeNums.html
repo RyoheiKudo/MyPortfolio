@@ -4,15 +4,21 @@
   <head>
     <!-- ブラウザの上の部分 -->
     <meta charset="UTF-8" />
-    <title>工藤のポートフォリオサイト</title>
+    <title>Rで大数の法則の学習</title>
     <link rel="icon" href="img/mainIcon.jpg" />
     <meta name="description" content="工藤のポートフォリオです。" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
 
   <body>
-    <main>
-      <link rel="stylesheet" href="css/main.css" />
-    </main>
+    <id id="include"></id>
+    <script>
+      $(function () {
+        $.ajaxSetup({ cache: false });
+        $("#include").load(
+          "https://ryoheikudo.github.io/MyPortfolio/MyPortfolio/html/html/r/rLargeNums.r"
+        );
+      });
+    </script>
   </body>
 </html>
