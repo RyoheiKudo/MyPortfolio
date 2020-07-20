@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>工藤のポートフォリオサイト</title>
+    <link rel="icon" href="img/mainIcon.jpg" />
+    <meta name="description" content="工藤のポートフォリオです。" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <style>
+        main {
+          display: flex;
+        }
+
+        .first {
+          background-color: aqua;
+          width: 100%;
+          height: 2000px;
+          margin: auto;
+        }
+
+        .second {
+          background-color: deeppink;
+          width: 100%;
+          height: 2000px;
+        }
+
+        .third {
+          background-color: yellow;
+          width: 100%;
+          height: 2000px;
+        }
+
+        .ans {
+          background-color: white;
+          margin: auto;
+          height: 50px;
+          text-align: center;
+          justify-content: center;
+        }
+
+        .hidden_show {
+          height: 0;
+          padding: 0;
+          overflow: hidden;
+          opacity: 0;
+          transition: 0.3s;
+        }
+      </style>
+
+      <div id="first" class="first">
+        <h1 id="firstT">ノーベル平和賞日本人受賞者を覚えよう!</h1>
+        <h2 id="firstS">
+          ノーベル平和賞日本人受賞者を全員答えられたらクリアだよ
+        </h2>
+        <div id="second" class="hidden_show">
+          <h2 id="secondT">
+            国家間の友好関係、軍備の削減・廃止、及び平和会議の開催・推進のために最大・最善の貢献をした人物・団体に贈られるノーベル平和賞日本人受賞者を現在、日本人で唯一受賞したのは誰？
+          </h2>
+          <div style="display: flex;">
+            <div class="ans" id="secondA1">佐藤栄作</div>
+            <div class="ans" id="secondA2">斎藤隆夫</div>
+          </div>
+        </div>
+        <div id="third" class="hidden_show">
+          <div id="thirdS" class="hidden_show">
+            <h1 id="thirdST">クリア</h1>
+            <div id="thirdSP">1不可説不可説転点</div>
+          </div>
+          <div id="thirdF" class="hidden_show">
+            <h1 id="thirdFT">残念</h1>
+            <div id="thirdFP">
+              あなたはノーベル平和賞の日本人受賞者を一人も覚えていません
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const first = document.getElementById("first");
+        const firstT = document.getElementById("firstT");
+        const firstS = document.getElementById("firstS");
+        const second = document.getElementById("second");
+        const secondT = document.getElementById("secondT");
+        const secondA1 = document.getElementById("secondA1");
+        const secondA2 = document.getElementById("secondA2");
+        const third = document.getElementById("third");
+        const thirdS = document.getElementById("thirdS");
+        const thirdST = document.getElementById("thirdST");
+        const thirdSP = document.getElementById("thirdSP");
+        const thirdF = document.getElementById("thirdF");
+        const thirdFT = document.getElementById("thirdF");
+        const thirdFP = document.getElementById("thirdF");
+
+        first.addEventListener("click", () => {
+          first.classList.remove("first");
+          first.classList.add("second");
+          firstT.classList.add("hidden_show");
+          firstS.classList.add("hidden_show");
+          second.classList.remove("hidden_show");
+        });
+
+        const reloadNovel = function () {
+          var count = 0;
+          var countup = function () {
+            console.log(count++);
+
+            var id = setTimeout(countup, 1000);
+
+            if (count === 3) {
+              first.addEventListener("click", () => {
+                location.reload();
+                const nobelPeacePrizeClick = document.getElementById(
+                  "nobelPeacePrizeClick"
+                );
+                googleChartsClick.classList.add("hidden_show");
+                balloonClick.classList.add("hidden_show");
+                othelloClick.classList.add("hidden_show");
+                omikujiClick.classList.add("hidden_show");
+                randomClick.classList.add("hidden_show");
+                rDecisionTreeClick.classList.add("hidden_show");
+                rLargeNumsClick.classList.add("hidden_show");
+                rBinomClick.classList.add("hidden_show");
+                rBasicClick.classList.add("hidden_show");
+                pythonBasicClick.classList.add("hidden_show");
+                rLLNandbinomClick.classList.add("hidden_show");
+                nobelPeacePrize.classList.remove("hidden_show");
+              });
+            } else if (count === 4) {
+              clearTimeout(id); //idをclearTimeoutで指定している
+            }
+          };
+
+          countup();
+        };
+
+        secondA1.addEventListener("click", () => {
+          first.classList.remove("second");
+          first.classList.add("third");
+          second.classList.add("hidden_show");
+          secondT.classList.add("hidden_show");
+          secondA1.classList.add("hidden_show");
+          secondA2.classList.add("hidden_show");
+          third.classList.remove("hidden_show");
+          thirdS.classList.remove("hidden_show");
+          thirdF.classList.add("hidden_show");
+          reloadNovel();
+        });
+
+        secondA2.addEventListener("click", () => {
+          first.classList.remove("second");
+          first.classList.add("third");
+          second.classList.add("hidden_show");
+          secondT.classList.add("hidden_show");
+          secondA1.classList.add("hidden_show");
+          secondA2.classList.add("hidden_show");
+          third.classList.remove("hidden_show");
+          thirdS.classList.add("hidden_show");
+          thirdF.classList.remove("hidden_show");
+          reloadNovel();
+        });
+      </script>
+    </main>
+  </body>
+</html>

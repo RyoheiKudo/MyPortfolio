@@ -1,0 +1,31 @@
+.appear {
+  display: flex;
+}
+
+.appear1 {
+  display: grid;
+  grid-template-areas: "hand... probability...................";
+}
+
+.probability {
+  grid-area: probability;
+  text-align: right;
+}
+
+#hand {
+}
+
+.card {
+  background-color: transparent;
+  border-style: solid;
+  border-color: black;
+  height: 140px;
+  width: 90px;
+  margin: auto;
+  margin-top: 10px;
+}
+.numSelection {
+  margin: auto;
+  margin-top: 5px;
+  width: 90px;
+}

@@ -1,0 +1,59 @@
+body {
+  color: #333;
+  font-family: Verdana, Tahoma, sans-serif;
+  /* margin-top: 0px ;
+  margin-bottom: 0px ; 
+  margin-right: 0px ; 
+  margin-left: 0px ; 
+  margin: 0px; */
+  /* margin:0; */
+  background-color: rgb(138, 165, 204);
+  /* リストの黒点消す */
+  list-style-type: none;
+  /* gridは<>←これに使う*/
+  display: grid;
+  grid-template:
+    "header  header  header   header  header"
+    "headT   headT   headT    headT   headT "
+    "left    center  center   center  right "
+    "footer  footer  footer   footer  footer";
+}
+
+.textCenter {
+  text-align: center;
+}
+
+header {
+  color: aliceblue;
+  background-color: rgb(37, 49, 71);
+  grid-area: header;
+}
+
+nav {
+  grid-area: left;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  margin-left: 10px;
+}
+
+main {
+  grid-area: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+aside {
+  grid-area: right;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  margin-right: 10px;
+}
+
+footer {
+  color: #333;
+  background-color: white;
+  grid-area: footer;
+  text-align: center;
+  justify-content: center;
+  height: 250px;
+}

@@ -1,308 +1,364 @@
 <!DOCTYPE html>
-
 <html lang="ja">
   <head>
     <!-- ブラウザの上の部分 -->
     <meta charset="UTF-8" />
     <title>工藤のポートフォリオサイト</title>
-    <link rel="icon" href="img/mainIcon.jpg" />
     <meta name="description" content="工藤のポートフォリオです。" />
-    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <header></header>
-
-    <nav></nav>
-
-    <main>
+    <main id="main">
       <link rel="stylesheet" href="css/main.css" />
 
-      <!-- 主要なものを入れることが多い -->
-
-      <div class="works mainContent">
-        <input type="checkbox" class="hiddeninput" id="hiddenShow1" />
-        <div class="visible_show" id="hidden_show1_1">
-          <h1 class="textCenter">作品</h1>
-          <div>
-            <h1>Google Charts</h1>
-            <p>5th Sample-app</p>
-            <p></p>
-            <label for="start">Start date:</label>
-            <input type="date" value="2020-06-20" />
-            <label for="start">Last updated:</label>
-            <input type="date" value="" />
-            <div id="charts"></div>
-            <script src="https://www.gstatic.com/charts/loader.js"></script>
-            <script src="js/charts.js"></script>
+      <div class="main" id="othelloClick">
+        <div class="mainLine">
+          <h1>
+            ~オセロゲーム(未) .js~
+          </h1>
+          <div class="inputLine">
+            Last updated: <input type="date" value="" />
           </div>
+        </div>
+        <div class="hidden_show" id="othello">
+          <iframe
+            src="html/othello.html"
+            frameborder="0"
+            width="100%"
+            height="2000px"
+          ></iframe>
+        </div>
+      </div>
 
-          <div>
-            <link rel="stylesheet" href="css/balloon.css" />
-            <h1>竹取吹き出しくん~LINE風~</h1>
-            <p>4th Sample-app</p>
-            <p>吹き出しに、テキストを遅延をつけて挿入</p>
-            <label for="start">Start date:</label>
-            <input type="date" value="2020-06-20" />
-            <label for="start">Last updated:</label>
-            <input type="date" value="2020-06-22" />
-            <p>
-              送信ボタンをおしてね<input
-                type="submit"
-                id="balloon"
-                style="margin-left: 10px;"
-              />
-            </p>
-            <div class="displayLine">
-              <div class="balloon1-1" id="balloon1-1"></div>
-              <p id="time0" class="textLine1"></p>
-            </div>
-            <div class="displayLine">
-              <div class="balloon1-2" id="balloon1-2"></div>
-              <div>
-                <p id="alreadyRead1" class="textLine2"></p>
-                <p id="time1" class="textLine2"></p>
-              </div>
-            </div>
-            <div class="displayLine">
-              <div class="balloon1-3" id="balloon1-3"></div>
-              <p id="time2" class="textLine1"></p>
-            </div>
-            <div class="displayLine">
-              <div class="balloon1-4" id="balloon1-4"></div>
-              <div>
-                <p id="alreadyRead3" class="textLine2"></p>
-                <p id="time3" class="textLine2"></p>
-              </div>
-            </div>
-            <script src="js/balloon.js"></script>
+      <div class="main" id="practiceBJClick">
+        <div class="mainLine">
+          <h1>
+            ~ポーカーハンドの強さ(未) .js~
+          </h1>
+          <div class="inputLine">
+            Last Updated: <input type="date" value="2020-07-14" />
           </div>
+        </div>
+        <div class="hidden_show" id="practiceBJ">
+          <iframe
+            src="html/practiceBJ.html"
+            frameborder="0"
+            width="100%"
+            height="2000px"
+          ></iframe>
+        </div>
+      </div>
 
-          <div>
-            <link rel="stylesheet" href="css/othello.css" />
-            <h1>オセロゲーム</h1>
-            <p>3rd Sample-app</p>
-            <p></p>
-            <label for="start">Start date:</label>
-            <input type="date" value="2020-06-18" />
-            <label for="start">Last updated:</label>
-            <input type="date" value="" />
-            <!--  盤面 -->
-            <table id="field"></table>
-            <!-- ターンの表示 -->
-            <p id="view_tarn"></p>
-            <!--- 初期化ボタン -->
-            <button type="button" id="ban_init" onclick="ban_init()">
-              やり直し
-            </button>
-            <script src="js/othello.js" text="text/javascript"></script>
+      <div class="main" id="rDecisionTreeClick">
+        <div class="mainLine">
+          <h1>
+            ~決定木分析(未) .r~
+          </h1>
+          <div class="inputLine">
+            Last Updated: <input type="date" value="2020-06-25" />
           </div>
+        </div>
+        <div class="hidden_show" id="rDecisionTree">
+          <iframe
+            src="html/rDicisionTree.html"
+            frameborder="0"
+            width="100%"
+            height="2000px"
+          ></iframe>
+        </div>
+      </div>
 
-          <div>
-            <link rel="stylesheet" href="css/omikuji.css" />
-            <h1>御神籤（大吉の確率2%!!!!）</h1>
-            <p>2nd Sample-app</p>
-            <p>表示される吉凶の語の追加とそれに伴う出現確率の変更</p>
-            <label for="start">Start date:</label>
-            <input type="date" value="2020-06-16" />
-            <label for="start">Last updated:</label>
-            <input type="date" value="2020-06-18" />
-            <p>
-              下の？ボタンを押してください。あなたの運勢が占われます。（何回でも押せるよ）
-            </p>
-            <div class="btn" id="btn">?</div>
-            <script src="js/omikuji.js"></script>
+      <div class="main">
+        <div class="mainLine" id="pythonBasicClick">
+          <h1>
+            ~基礎(未) .py~
+          </h1>
+          <div class="inputLine">
+            Last Updated:
+            <input type="date" value="2020-06-25" />
           </div>
+        </div>
+        <div class="hidden_show" id="pythonBasic">
+          <iframe
+            src="html/pythonBasic.html"
+            frameborder="0"
+            width="100%"
+            height="2000px"
+          ></iframe>
+        </div>
+      </div>
 
-          <div>
-            <link rel="stylesheet" href="css/random.css" />
-            <h1>バイバインランダムボックス</h1>
-            <h2>（バグかつ仕様です。修正諦めました。）</h2>
-            <p>1st Sample-app</p>
-            <p>難易度を調整可能にして、勝利時のアラートを追加</p>
-            <!-- 日付の追加 -->
-            <label for="start">Start date:</label>
-            <input type="date" value="2020-06-16" />
-            <label for="start">Last updated:</label>
+      <div class="main" id="reactBasicClick">
+        <div class="mainLine">
+          <h1>
+            ~React基礎(未) .js~
+          </h1>
+          <div class="inputLine">
+            Last Updated: <input type="date" value="2020-07-17" />
+          </div>
+        </div>
+        <div class="hidden_show" id="reactBasic">
+          <iframe
+            src="html/reactBasic.html"
+            frameborder="0"
+            width="100%"
+            height="2000px"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="main" id="vueBasicClick">
+        <div class="mainLine">
+          <h1>
+            ~Vue基礎1 .js~
+          </h1>
+          <div class="inputLine">
+            Last Updated: <input type="date" value="2020-07-20" />
+          </div>
+        </div>
+        <div class="hidden_show" id="vueBasic">
+          <iframe
+            src="html/vueBasic1.html"
+            frameborder="0"
+            width="100%"
+            height="2000px"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="main" id="jQueryBasicClick">
+        <div class="mainLine">
+          <h1>
+            ~jQuery基礎 .js~
+          </h1>
+          <div class="inputLine">
+            Last Updated: <input type="date" value="2020-07-17" />
+          </div>
+        </div>
+        <div class="hidden_show" id="jQueryBasic">
+          <iframe
+            src="html/jQueryBasic.html"
+            frameborder="0"
+            width="100%"
+            height="2000px"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="main" id="phpBasicClick">
+        <div class="mainLine">
+          <h1>
+            ~基礎(未) .php~
+          </h1>
+          <div class="inputLine">
+            Last Updated: <input type="date" value="2020-07-17" />
+          </div>
+        </div>
+        <div class="hidden_show" id="phpBasic">
+          <iframe
+            src="html/phpBasic.html"
+            frameborder="0"
+            width="100%"
+            height="2000px"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="main" id="googleMapsClick">
+        <div class="mainLine">
+          <h1>
+            ~Google Maps API .js~
+          </h1>
+          <div class="inputLine">
+            Last updated:
+            <input type="date" value="2020-07-10" />
+          </div>
+        </div>
+        <div class="hidden_show" id="googleMaps">
+          <iframe
+            src="html/googleMaps.html"
+            frameborder="0"
+            width="100%"
+            height="2000px"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="main" id="googleChartsClick">
+        <div class="mainLine">
+          <h1>
+            ~Google Charts .js~
+          </h1>
+          <div class="inputLine">
+            Last updated:
+            <input type="date" value="2020-07-10" />
+          </div>
+        </div>
+        <div class="hidden_show" id="googleCharts">
+          <iframe
+            src="html/googleCharts.html"
+            frameborder="0"
+            width="100%"
+            height="2000px"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="main" id="nobelPeacePrizeClick">
+        <div class="mainLine">
+          <h1>
+            ~ノーベル平和賞日本人受賞者を覚えよう! .js~
+          </h1>
+          <div class="inputLine">
+            Last Updated: <input type="date" value="2020-07-06" />
+          </div>
+        </div>
+        <div class="hidden_show" id="nobelPeacePrize">
+          <iframe
+            src="html/nobelPeacePrize.html"
+            frameborder="0"
+            width="100%"
+            height="2000px"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="main" id="rLLNandbinomClick">
+        <div class="mainLine">
+          <h1>
+            ~大数の法則と中心極限定理 .r~
+          </h1>
+          <div class="inputLine">
+            Last Updated: <input type="date" value="2020-07-05" />
+          </div>
+        </div>
+        <div class="hidden_show" id="rLLNandbinom">
+          <iframe
+            src="html/rCLT.html"
+            frameborder="0"
+            width="100%"
+            height="2000px"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="main" id="balloonClick">
+        <div class="mainLine">
+          <h1>
+            ~東京サマーセッション LINE風 .js~
+          </h1>
+          <div class="inputLine">
+            Last updated: <input type="date" value="2020-07-04" />
+          </div>
+        </div>
+        <div class="hidden_show" id="balloon">
+          <iframe
+            src="html/balloon.html"
+            frameborder="0"
+            width="100%"
+            height="2000px"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="main" id="rLargeNumsClick">
+        <div class="mainLine">
+          <h1>
+            ~大数の法則 .js~
+          </h1>
+          <div class="inputLine">
+            Last Updated: <input type="date" value="2020-06-29" />
+          </div>
+        </div>
+        <div class="hidden_show" id="rLargeNums">
+          <iframe
+            src="html/rLargeNums.html"
+            frameborder="0"
+            width="100%"
+            height="2000px"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="main" id="rBinomClick">
+        <div class="mainLine">
+          <h1>
+            ~二項分布 .js~
+          </h1>
+          <div class="inputLine">
+            Last Updated: <input type="date" value="2020-06-25" />
+          </div>
+        </div>
+        <div class="hidden_show" id="rBinom">
+          <iframe
+            src="html/rBinom.html"
+            frameborder="0"
+            width="100%"
+            height="2000px"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="main" id="rBasicClick">
+        <div class="mainLine">
+          <h1>
+            ~基礎 .r~
+          </h1>
+          <div class="inputLine">
+            Last Updated: <input type="date" value="2020-06-25" />
+          </div>
+        </div>
+        <div class="hidden_show" id="rBasic">
+          <iframe
+            src="html/rBasic.html"
+            frameborder="0"
+            width="100%"
+            height="2000px"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="main" id="randomClick">
+        <div class="mainLine">
+          <h1>
+            ~バイバインランダムボックス .js~
+          </h1>
+          <div class="inputLine">
+            Last updated:
             <input type="date" value="2020-06-21" />
-            <p>4から6の間でお好きな数字を選び送信してください。</p>
-            <p>タップして当たりが出たらあなたの勝利です。</p>
-            <p>※複数回送信するとバイバイン無限栗まんじゅうです。</p>
-            <input type="radio" name="randomnumber" value="4" />4
-            <input type="radio" name="randomnumber" value="5" />5
-            <input type="radio" name="randomnumber" value="6" />6
-            <input type="button" value="submit" id="randomboxbtm" />
-            <div id="randombox">
-              <script type="text/javascript" src="js/random.js"></script>
-            </div>
           </div>
         </div>
-      </div>
-
-      <div class="stat mainContent">
-        <input type="checkbox" class="hiddeninput" id="hiddenShow2" />
-        <div class="hidden_show" id="hidden_show2_1">
-          <h1>統計とRの勉強メモ</h1>
-
-          <h2>
-            ~Rで決定木分析~<label for="start" class="textCenter"
-              >Last Updated:</label
-            ><input
-              type="date"
-              value="2020-06-25"
-              style="text-align: center;"
-            />
-          </h2>
-
-          <h2>
-            ~Rで大数の法則~<label for="start" class="textCenter"
-              >Last Updated:</label
-            ><input
-              type="date"
-              value="2020-06-25"
-              style="text-align: center;"
-            />
-          </h2>
-
-          <link rel="import" href="r/index3.r" />
-
+        <div class="hidden_show" id="random">
           <iframe
-            src="r/index3.r"
+            src="html/random.html"
             frameborder="0"
-            height="800"
             width="100%"
-            sandbox="sandobox"
+            height="2000px"
           ></iframe>
-
-          <h2>
-            ~Rで二項分布~<label for="start" class="textCenter"
-              >Last Updated:</label
-            ><input
-              type="date"
-              value="2020-06-25"
-              style="text-align: center;"
-            />
-          </h2>
-
-          <link rel="import" href="r/index2.r" />
-          <iframe
-            src="r/index2.r"
-            frameborder="0"
-            height="400"
-            width="100%"
-            sandbox="sandobox"
-          ></iframe>
-
-          <h2>
-            ~Rの基礎~<label for="start" class="textCenter">Last Updated:</label
-            ><input
-              type="date"
-              value="2020-06-25"
-              style="text-align: center;"
-            />
-          </h2>
-
-          <link rel="import" href="r/index1.r" />
-          <iframe
-            src="r/index1.r"
-            frameborder="0"
-            height="500"
-            width="100%"
-            sandbox="sandobox"
-          >
-            iframe対応のブラウザでご覧ください
-          </iframe>
-          <!-- <iframe src="r/index1.r" frameborder="0" height="100%" width="100%"></iframe>できない -->
-          <!-- スマホでも見れる時、みれない時があるため、改善予定 -->
         </div>
       </div>
 
-      <div class="python mainContent">
-        <input type="checkbox" class="hiddeninput" id="hiddenShow3" />
-        <div class="hidden_show" id="hidden_show3_1">
-          <h1 class="textCenter">Pythonの勉強メモ</h1>
-
-          <h2 class="textCenter">
-            ~Pythonの基礎~<label for="start" class="textCenter"
-              >Last Updated:</label
-            ><input
-              type="date"
-              value="2020-06-25"
-              style="text-align: center;"
-            />
-          </h2>
-
-          <link rel="import" href="python/index1.py" />
-
+      <div class="main" id="omikujiClick">
+        <div class="mainLine">
+          <h1>
+            ~御神籤（大吉の確率2%!!!!）.js~
+          </h1>
+          <div class="inputLine">
+            Last updated:
+            <input type="date" value="2020-06-18" />
+          </div>
+        </div>
+        <div class="hidden_show" id="omikuji">
           <iframe
-            src="python/index1.py"
+            src="html/omikuji.html"
             frameborder="0"
-            height="2100"
             width="100%"
-            sandbox="sandobox"
-          >
-            iframe対応のブラウザでご覧ください
-          </iframe>
+            height="2000px"
+          ></iframe>
         </div>
       </div>
 
       <script src="js/main.js"></script>
     </main>
-
-    <aside></aside>
-
-    <footer class="footer">
-      <link rel="stylesheet" href="css/footer.css" />
-
-      <div class="footerContent">
-        <div id="flickSolid">
-          <a href="https://github.com/ryoheikudo" target="_blank">
-            <small>
-              <img
-                src="img/githuIcon.png"
-                width="30"
-                height="30"
-                alt="GitHubのアイコンです。"
-                class="imgGithub"
-              />
-              <div id="circleLine">
-                @ryoheikudo に 送信する ☺︎
-              </div>
-              <div>
-                🎤
-              </div>
-            </small>
-          </a>
-        </div>
-        <div class="flickUp">
-          <div class="flickContent kigou1">記号</div>
-          <div class="flickContent a">あ</div>
-          <div class="flickContent ka">か</div>
-          <div class="flickContent sa">さ</div>
-          <div class="flickContent batsu">x</div>
-          <div class="flickContent num">123</div>
-          <div class="flickContent ta">た</div>
-          <div class="flickContent na">な</div>
-          <div class="flickContent ha">は</div>
-          <div class="flickContent sapace">空白</div>
-        </div>
-        <div class="flickDown">
-          <div class="flickContent aa">あA</div>
-          <div class="flickContent ma">ま</div>
-          <div class="flickContent ya">や</div>
-          <div class="flickContent ra">ら</div>
-          <div class="flickContent kaigyo">
-            <div id="kaigyo">
-              改行
-            </div>
-          </div>
-          <div class="flickContent comme">□</div>
-          <div class="flickContent stamp">○</div>
-          <div class="flickContent emoji">^_^</div>
-          <div class="flickContent wa">わ</div>
-          <div class="flickContent kigou2">？</div>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
