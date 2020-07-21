@@ -29,40 +29,39 @@
     <nav id="nav">
       <link rel="stylesheet" href="css/nav.css" />
 
-        <h2 class="pointer" id="titleReferences">
-          References ▼
-        </h2>
+      <h2 class="pointer" id="titleReferences">
+        References ▼
+      </h2>
 
-        <div id="references">
-          <!-- 変数名 in 配列名 -->
-          <p v-for="referencesLesson in referencesLessons">
-            <a :href="referencesLesson.url" target="_blank">
-              {{referencesLesson.name}}
-            </a>
-          </p>
-        </div>
+      <div id="references">
+        <!-- 変数名 in 配列名 -->
+        <p v-for="referencesLesson in referencesLessons">
+          <a :href="referencesLesson.url" target="_blank">
+            {{referencesLesson.name}}
+          </a>
+        </p>
+      </div>
 
-        <h2 class="pointer" id="titleProgate">
-          progate ▼
-        </h2>
+      <h2 class="pointer" id="titleProgate">
+        progate ▼
+      </h2>
 
-        <div id="progate">
-          <!-- 変数名 in 配列名 -->
-          <p v-for="progateLesson in progateLessons">
-            {{progateLesson}}
-          </p>
-        </div>
+      <div id="progate">
+        <!-- 変数名 in 配列名 -->
+        <p v-for="progateLesson in progateLessons">
+          {{progateLesson}}
+        </p>
+      </div>
 
-        <h2 class="pointer" id="titleDotinstall">
-          ドットインストール ▼
-        </h2>
+      <h2 class="pointer" id="titleDotinstall">
+        ドットインストール ▼
+      </h2>
 
-        <div id="dotinstall">
-          <!-- 変数名 in 配列名 -->
-          <p v-for="dotinstallLesson in dotinstallLessons">
-            {{dotinstallLesson.name}}
-          </p>
-        </div>
+      <div id="dotinstall">
+        <!-- 変数名 in 配列名 -->
+        <p v-for="dotinstallLesson in dotinstallLessons">
+          {{dotinstallLesson.name}}
+        </p>
       </div>
 
       <script src="js/nav.js"></script>
@@ -225,6 +224,14 @@
         </div>
       </div>
       <script src="js/footer.js"></script>
+      <script>
+        function func1() {
+          const sub = document.getElementById("submit-frame-content");
+          sub.style.width = sub.contentWindow.document.body.scrollWidth + "px";
+          sub.style.height =
+            sub.contentWindow.document.body.scrollHeight + "px";
+        }
+      </script>
     </footer>
   </body>
 </html>
