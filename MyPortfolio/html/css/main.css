@@ -1,4 +1,4 @@
-.mainLine {
+.mainFrame {
   background-color: transparent;
   border-style: solid;
   border: 0.5;
@@ -9,18 +9,4 @@
 
 .inputLine {
   margin: auto 0 auto auto;
-}
-
-.visible_show {
-  height: auto;
-  overflow: visible;
-  transition: 0.3s;
-}
-
-.hidden_show {
-  height: 0;
-  padding: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: 0.3s;
 }
