@@ -2,15 +2,15 @@
   cursor: pointer;
 }
 
-.hiddeninput {
+/* .hiddeninput {
   display: none;
-}
+} */
 
 /* 見せないようにするクラス */
-.hidden_show {
+/* .hidden_show {
   height: 0;
   padding: 0;
   overflow: hidden;
   opacity: 0;
   transition: 0.3s;
-}
+} */

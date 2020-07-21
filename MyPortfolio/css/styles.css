@@ -5,9 +5,10 @@ body {
   list-style-type: none;
   display: grid;
   grid-template-areas:
-    "header  header header header header header header header header header"
-    "nav     nav    main   main   main   main    main  main   main   aside "
-    "footer  footer footer footer footer footer footer footer footer footer";
+    "header header header header header header header header header"
+    "nav    main   main   main   main    main  main   main   main  "
+    "aside  main   main   main   main    main  main   main   main  "
+    "footer footer footer footer footer footer footer footer footer";
 }
 
 header {
